@@ -18,23 +18,20 @@ function Model() {
   return <primitive object={scene} position={[0, 0, 0]} />;
 }
 
-const App = () => {
-  console.log('here');
-  return (
-    <Router>
-      <div className="app">
-        <Canvas
-          shadows={{ type: 'PCFShadowMap' }}
-        >
-          <pointLight intensity={1} position={[2, 10, 20]} />
-          <group position={[0, -1, 0]}>
-            <gridHelper />
-            <Model />
-          </group>
-          <OrbitControls />
-        </Canvas>
-      </div>
-    </Router>
-  );
-};
+const App = () => (
+  <Router>
+    <div className="app">
+      <Canvas
+        shadows={{ type: 'PCFShadowMap' }}
+      >
+        <pointLight intensity={1} position={[2, 10, 20]} />
+        <group position={[0, -1, 0]}>
+          <gridHelper />
+          <Model />
+        </group>
+        <OrbitControls />
+      </Canvas>
+    </div>
+  </Router>
+);
 export default App;
