@@ -2,10 +2,10 @@ import React from 'react';
 import { BrowserRouter as Router } from 'react-router-dom';
 import { Canvas, useFrame } from '@react-three/fiber';
 import { AnimationMixer } from 'three';
-import { OrbitControls, useGLTF } from '@react-three/drei';
+import { OrbitControls, useGLTF, Environment } from '@react-three/drei';
 import './App.scss';
 import model from './assets/model2.glb';
-
+import envMap from './assets/blue_photo_studio_2k.hdr';
 
 function Model() {
   let mixer = null;
@@ -24,12 +24,13 @@ const App = () => (
       <Canvas
         shadows={{ type: 'PCFShadowMap' }}
       >
+        <OrbitControls />
         <pointLight intensity={1} position={[2, 10, 20]} />
-        <group position={[0, -1, 0]}>
-          <gridHelper />
+        <Environment files={envMap} exposure={0.5} ground={{ height: 3, radius: 6 }} />
+
+        <group position={[0, -1, 0]} scale={2}>
           <Model />
         </group>
-        <OrbitControls />
       </Canvas>
     </div>
   </Router>
