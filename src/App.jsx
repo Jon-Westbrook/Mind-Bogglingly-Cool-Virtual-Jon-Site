@@ -4,7 +4,7 @@ import { Canvas, useFrame } from '@react-three/fiber';
 import { AnimationMixer } from 'three';
 import { OrbitControls, useGLTF } from '@react-three/drei';
 import './App.scss';
-import model from './assets/model1.gltf';
+import model from './assets/model1.glb';
 
 
 function Model() {
@@ -18,7 +18,6 @@ function Model() {
   return <primitive object={scene} position={[0, 0, 0]} />;
 }
 
-
 const App = () => {
   console.log('here');
   return (
@@ -27,8 +26,8 @@ const App = () => {
         <Canvas
           shadows={{ type: 'PCFShadowMap' }}
         >
-          <pointLight intensity={5} position={[2, 10, 20]} />
-          <group position={[0, 0, 0]}>
+          <pointLight intensity={1} position={[2, 10, 20]} />
+          <group position={[0, -1, 0]}>
             <gridHelper />
             <Model />
           </group>
