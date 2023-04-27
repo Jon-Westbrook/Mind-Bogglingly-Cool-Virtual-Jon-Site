@@ -1,0 +1,3824 @@
+[
+  {
+    "id": 3,
+    "name": "Pregnant Octopus",
+    "map": "src/assets/textures/000022.1895205112.png",
+    "claimed": false
+  },
+  {
+    "id": 4,
+    "name": "Rough Quail",
+    "map": "src/assets/textures/000023.1160498918.png",
+    "claimed": false
+  },
+  {
+    "id": 5,
+    "name": "Judicial Muskox",
+    "map": "src/assets/textures/000024.2477078171.png",
+    "claimed": false
+  },
+  {
+    "id": 6,
+    "name": "Flat Rhinoceros",
+    "map": "src/assets/textures/000025.1194740444.png",
+    "claimed": false
+  },
+  {
+    "id": 7,
+    "name": "Fuzzy Caterpillar",
+    "map": "src/assets/textures/000026.85974565.png",
+    "claimed": false
+  },
+  {
+    "id": 8,
+    "name": "Female Canid",
+    "map": "src/assets/textures/000027.113893774.png",
+    "claimed": false
+  },
+  {
+    "id": 9,
+    "name": "Renewed Ocelot",
+    "map": "src/assets/textures/000028.2583429408.png",
+    "claimed": false
+  },
+  {
+    "id": 10,
+    "name": "Formidable Fly",
+    "map": "src/assets/textures/000029.3972048536.png",
+    "claimed": false
+  },
+  {
+    "id": 11,
+    "name": "Modern Bat",
+    "map": "src/assets/textures/000030.3535231020.png",
+    "claimed": false
+  },
+  {
+    "id": 12,
+    "name": "Shaggy Tapir",
+    "map": "src/assets/textures/000031.767060014.png",
+    "claimed": false
+  },
+  {
+    "id": 13,
+    "name": "Angry Pinniped",
+    "map": "src/assets/textures/000032.3012493301.png",
+    "claimed": false
+  },
+  {
+    "id": 14,
+    "name": "Faithful Magpie",
+    "map": "src/assets/textures/000033.1184131310.png",
+    "claimed": false
+  },
+  {
+    "id": 15,
+    "name": "Immense Aardvark",
+    "map": "src/assets/textures/000034.2348822051.png",
+    "claimed": false
+  },
+  {
+    "id": 16,
+    "name": "Mixed Peafowl",
+    "map": "src/assets/textures/000035.3382475580.png",
+    "claimed": false
+  },
+  {
+    "id": 17,
+    "name": "Outside Kiwi",
+    "map": "src/assets/textures/000036.1566313856.png",
+    "claimed": false
+  },
+  {
+    "id": 18,
+    "name": "Favourable Camel",
+    "map": "src/assets/textures/000037.2019107339.png",
+    "claimed": false
+  },
+  {
+    "id": 19,
+    "name": "Intermediate Penguin",
+    "map": "src/assets/textures/000038.1734363964.png",
+    "claimed": false
+  },
+  {
+    "id": 20,
+    "name": "Evolutionary Cheetah",
+    "map": "src/assets/textures/000039.1434470849.png",
+    "claimed": false
+  },
+  {
+    "id": 21,
+    "name": "Nuclear Swordtail",
+    "map": "src/assets/textures/000040.3653849795.png",
+    "claimed": false
+  },
+  {
+    "id": 22,
+    "name": "Shrill Jaguar",
+    "map": "src/assets/textures/000041.2730569615.png",
+    "claimed": false
+  },
+  {
+    "id": 23,
+    "name": "Smoggy Toucan",
+    "map": "src/assets/textures/000042.2279916480.png",
+    "claimed": false
+  },
+  {
+    "id": 24,
+    "name": "Geographical Mollusk",
+    "map": "src/assets/textures/000043.1617855318.png",
+    "claimed": false
+  },
+  {
+    "id": 25,
+    "name": "International Jaguar",
+    "map": "src/assets/textures/000044.1271404901.png",
+    "claimed": false
+  },
+  {
+    "id": 26,
+    "name": "Missing Reindeer",
+    "map": "src/assets/textures/000045.2246859976.png",
+    "claimed": false
+  },
+  {
+    "id": 27,
+    "name": "Determined Thrush",
+    "map": "src/assets/textures/000046.3850903319.png",
+    "claimed": false
+  },
+  {
+    "id": 28,
+    "name": "Neat Sparrow",
+    "map": "src/assets/textures/000047.3062324867.png",
+    "claimed": false
+  },
+  {
+    "id": 29,
+    "name": "Wild Marsupial",
+    "map": "src/assets/textures/000048.3359437566.png",
+    "claimed": false
+  },
+  {
+    "id": 30,
+    "name": "Zeroth Ant",
+    "map": "src/assets/textures/000049.158008729.png",
+    "claimed": false
+  },
+  {
+    "id": 31,
+    "name": "Marvellous Caribou",
+    "map": "src/assets/textures/000050.3299684598.png",
+    "claimed": false
+  },
+  {
+    "id": 32,
+    "name": "Characteristic Lemur",
+    "map": "src/assets/textures/000051.3435239403.png",
+    "claimed": false
+  },
+  {
+    "id": 33,
+    "name": "Supposed Limpet",
+    "map": "src/assets/textures/000052.2667962716.png",
+    "claimed": false
+  },
+  {
+    "id": 34,
+    "name": "High Chimpanzee",
+    "map": "src/assets/textures/000053.1223046657.png",
+    "claimed": false
+  },
+  {
+    "id": 35,
+    "name": "Relevant Walrus",
+    "map": "src/assets/textures/000054.1917366831.png",
+    "claimed": false
+  },
+  {
+    "id": 36,
+    "name": "Straight Chipmunk",
+    "map": "src/assets/textures/000055.4161477428.png",
+    "claimed": false
+  },
+  {
+    "id": 37,
+    "name": "Chronic Jellyfish",
+    "map": "src/assets/textures/000056.1373010881.png",
+    "claimed": false
+  },
+  {
+    "id": 38,
+    "name": "Zeroth Sailfish",
+    "map": "src/assets/textures/000057.4203531335.png",
+    "claimed": false
+  },
+  {
+    "id": 39,
+    "name": "Cool Yak",
+    "map": "src/assets/textures/000058.654871237.png",
+    "claimed": false
+  },
+  {
+    "id": 40,
+    "name": "Broken Quail",
+    "map": "src/assets/textures/000059.2028088005.png",
+    "claimed": false
+  },
+  {
+    "id": 41,
+    "name": "Welcome Herring",
+    "map": "src/assets/textures/000060.936914077.png",
+    "claimed": false
+  },
+  {
+    "id": 42,
+    "name": "Sticky Puffin",
+    "map": "src/assets/textures/000061.2529374039.png",
+    "claimed": false
+  },
+  {
+    "id": 43,
+    "name": "Expected Thrush",
+    "map": "src/assets/textures/000062.108731023.png",
+    "claimed": false
+  },
+  {
+    "id": 44,
+    "name": "Feminist Flyingfish",
+    "map": "src/assets/textures/000063.527628032.png",
+    "claimed": false
+  },
+  {
+    "id": 45,
+    "name": "Whole Armadillo",
+    "map": "src/assets/textures/000064.215437578.png",
+    "claimed": false
+  },
+  {
+    "id": 46,
+    "name": "Confident Hippopotamus",
+    "map": "src/assets/textures/000065.2278088994.png",
+    "claimed": false
+  },
+  {
+    "id": 47,
+    "name": "Surrounding Bear",
+    "map": "src/assets/textures/000066.857442862.png",
+    "claimed": false
+  },
+  {
+    "id": 48,
+    "name": "Financial Tyrannosaurus",
+    "map": "src/assets/textures/000067.1626548352.png",
+    "claimed": false
+  },
+  {
+    "id": 49,
+    "name": "Melodic Mongoose",
+    "map": "src/assets/textures/000068.849231342.png",
+    "claimed": false
+  },
+  {
+    "id": 50,
+    "name": "Accused Loon",
+    "map": "src/assets/textures/000069.3024027384.png",
+    "claimed": false
+  },
+  {
+    "id": 51,
+    "name": "Awake Elk",
+    "map": "src/assets/textures/000070.4292638397.png",
+    "claimed": false
+  },
+  {
+    "id": 52,
+    "name": "Healthy Tahr",
+    "map": "src/assets/textures/000071.405210533.png",
+    "claimed": false
+  },
+  {
+    "id": 53,
+    "name": "Disgusted Firefly",
+    "map": "src/assets/textures/000072.3024407521.png",
+    "claimed": false
+  },
+  {
+    "id": 54,
+    "name": "Atomic Hoverfly",
+    "map": "src/assets/textures/000073.2817554598.png",
+    "claimed": false
+  },
+  {
+    "id": 55,
+    "name": "Metropolitan Shrimp",
+    "map": "src/assets/textures/000074.2718323763.png",
+    "claimed": false
+  },
+  {
+    "id": 56,
+    "name": "Artistic Salmon",
+    "map": "src/assets/textures/000075.3965753974.png",
+    "claimed": false
+  },
+  {
+    "id": 57,
+    "name": "Sophisticated Shark",
+    "map": "src/assets/textures/000076.578869711.png",
+    "claimed": false
+  },
+  {
+    "id": 58,
+    "name": "Weak Narwhal",
+    "map": "src/assets/textures/000077.807938883.png",
+    "claimed": false
+  },
+  {
+    "id": 59,
+    "name": "Ultimate Hare",
+    "map": "src/assets/textures/000078.1910980641.png",
+    "claimed": false
+  },
+  {
+    "id": 60,
+    "name": "Equivalent Squirrel",
+    "map": "src/assets/textures/000079.1548997611.png",
+    "claimed": false
+  },
+  {
+    "id": 61,
+    "name": "Itchy Firefly",
+    "map": "src/assets/textures/000080.572678643.png",
+    "claimed": false
+  },
+  {
+    "id": 62,
+    "name": "Xenial Opossum",
+    "map": "src/assets/textures/000081.1366263859.png",
+    "claimed": false
+  },
+  {
+    "id": 63,
+    "name": "Voiceless Parrotfish",
+    "map": "src/assets/textures/000082.3634305931.png",
+    "claimed": false
+  },
+  {
+    "id": 64,
+    "name": "Complete Cicada",
+    "map": "src/assets/textures/000083.3936153100.png",
+    "claimed": false
+  },
+  {
+    "id": 65,
+    "name": "Few Marmoset",
+    "map": "src/assets/textures/000084.592299040.png",
+    "claimed": false
+  },
+  {
+    "id": 66,
+    "name": "Premier Bandicoot",
+    "map": "src/assets/textures/000085.98783666.png",
+    "claimed": false
+  },
+  {
+    "id": 67,
+    "name": "Mute Muskox",
+    "map": "src/assets/textures/000086.1444002139.png",
+    "claimed": false
+  },
+  {
+    "id": 68,
+    "name": "Disturbed Snipe",
+    "map": "src/assets/textures/000087.1376132527.png",
+    "claimed": false
+  },
+  {
+    "id": 69,
+    "name": "Similar Asp",
+    "map": "src/assets/textures/000088.931647376.png",
+    "claimed": false
+  },
+  {
+    "id": 70,
+    "name": "Slight Quelea",
+    "map": "src/assets/textures/000089.3231396050.png",
+    "claimed": false
+  },
+  {
+    "id": 71,
+    "name": "Faithful Woodpecker",
+    "map": "src/assets/textures/000090.844935683.png",
+    "claimed": false
+  },
+  {
+    "id": 72,
+    "name": "Mild Marlin",
+    "map": "src/assets/textures/000091.1048676110.png",
+    "claimed": false
+  },
+  {
+    "id": 73,
+    "name": "Helpful Jackal",
+    "map": "src/assets/textures/000092.3356458597.png",
+    "claimed": false
+  },
+  {
+    "id": 74,
+    "name": "Scrawny Skunk",
+    "map": "src/assets/textures/000093.2810646364.png",
+    "claimed": false
+  },
+  {
+    "id": 75,
+    "name": "Vague Skunk",
+    "map": "src/assets/textures/000094.541015899.png",
+    "claimed": false
+  },
+  {
+    "id": 76,
+    "name": "Continuing Pelican",
+    "map": "src/assets/textures/000095.2354906969.png",
+    "claimed": false
+  },
+  {
+    "id": 77,
+    "name": "Fiscal Kangaroo",
+    "map": "src/assets/textures/000096.2660938816.png",
+    "claimed": false
+  },
+  {
+    "id": 78,
+    "name": "Outstanding Parakeet",
+    "map": "src/assets/textures/000097.3787894790.png",
+    "claimed": false
+  },
+  {
+    "id": 79,
+    "name": "Hollow Lemur",
+    "map": "src/assets/textures/000098.2956408411.png",
+    "claimed": false
+  },
+  {
+    "id": 80,
+    "name": "Cute Dormouse",
+    "map": "src/assets/textures/000099.2269022838.png",
+    "claimed": false
+  },
+  {
+    "id": 81,
+    "name": "Anonymous Tuna",
+    "map": "src/assets/textures/000100.341895577.png",
+    "claimed": false
+  },
+  {
+    "id": 82,
+    "name": "Ambitious Marmoset",
+    "map": "src/assets/textures/000101.2439903508.png",
+    "claimed": false
+  },
+  {
+    "id": 83,
+    "name": "Popular Hookworm",
+    "map": "src/assets/textures/000102.306033290.png",
+    "claimed": false
+  },
+  {
+    "id": 84,
+    "name": "Wild Raven",
+    "map": "src/assets/textures/000103.1304575061.png",
+    "claimed": false
+  },
+  {
+    "id": 85,
+    "name": "Tropical Takin",
+    "map": "src/assets/textures/000104.4073998445.png",
+    "claimed": false
+  },
+  {
+    "id": 86,
+    "name": "Long Duck",
+    "map": "src/assets/textures/000105.1203404289.png",
+    "claimed": false
+  },
+  {
+    "id": 87,
+    "name": "Sorry Gayal",
+    "map": "src/assets/textures/000106.3106825499.png",
+    "claimed": false
+  },
+  {
+    "id": 88,
+    "name": "Broken Warbler",
+    "map": "src/assets/textures/000107.3651509211.png",
+    "claimed": false
+  },
+  {
+    "id": 89,
+    "name": "Moaning Cricket",
+    "map": "src/assets/textures/000108.1192072978.png",
+    "claimed": false
+  },
+  {
+    "id": 90,
+    "name": "Anonymous Ermine",
+    "map": "src/assets/textures/000109.1041660142.png",
+    "claimed": false
+  },
+  {
+    "id": 91,
+    "name": "Profound Silverfish",
+    "map": "src/assets/textures/000110.1489287768.png",
+    "claimed": false
+  },
+  {
+    "id": 92,
+    "name": "Gigantic Crab",
+    "map": "src/assets/textures/000111.1120841228.png",
+    "claimed": false
+  },
+  {
+    "id": 93,
+    "name": "Querulous Crane",
+    "map": "src/assets/textures/000112.2155397043.png",
+    "claimed": false
+  },
+  {
+    "id": 94,
+    "name": "Closed Bee",
+    "map": "src/assets/textures/000113.331584117.png",
+    "claimed": false
+  },
+  {
+    "id": 95,
+    "name": "Greasy Locust",
+    "map": "src/assets/textures/000114.3635604614.png",
+    "claimed": false
+  },
+  {
+    "id": 96,
+    "name": "Dreadful Clam",
+    "map": "src/assets/textures/000115.1918150259.png",
+    "claimed": false
+  },
+  {
+    "id": 97,
+    "name": "Nasty Wren",
+    "map": "src/assets/textures/000116.2837535039.png",
+    "claimed": false
+  },
+  {
+    "id": 98,
+    "name": "Tremendous Narwhal",
+    "map": "src/assets/textures/000117.4118747858.png",
+    "claimed": false
+  },
+  {
+    "id": 99,
+    "name": "Communist Angelfish",
+    "map": "src/assets/textures/000118.2760608514.png",
+    "claimed": false
+  },
+  {
+    "id": 100,
+    "name": "Temporary Tapir",
+    "map": "src/assets/textures/000119.1965603476.png",
+    "claimed": false
+  },
+  {
+    "id": 101,
+    "name": "Substantial Cardinal",
+    "map": "src/assets/textures/000120.1657146320.png",
+    "claimed": false
+  },
+  {
+    "id": 102,
+    "name": "Shared Sloth",
+    "map": "src/assets/textures/000121.53137469.png",
+    "claimed": false
+  },
+  {
+    "id": 103,
+    "name": "Inner Tuna",
+    "map": "src/assets/textures/000122.1111236185.png",
+    "claimed": false
+  },
+  {
+    "id": 104,
+    "name": "Temporary Buzzard",
+    "map": "src/assets/textures/000123.2414289460.png",
+    "claimed": false
+  },
+  {
+    "id": 105,
+    "name": "Nasty Planarian",
+    "map": "src/assets/textures/000124.4286148270.png",
+    "claimed": false
+  },
+  {
+    "id": 106,
+    "name": "Round Mandrill",
+    "map": "src/assets/textures/000125.3183716536.png",
+    "claimed": false
+  },
+  {
+    "id": 107,
+    "name": "Obedient Hare",
+    "map": "src/assets/textures/000126.830847540.png",
+    "claimed": false
+  },
+  {
+    "id": 108,
+    "name": "Light Python",
+    "map": "src/assets/textures/000127.114738597.png",
+    "claimed": false
+  },
+  {
+    "id": 109,
+    "name": "Outrageous Chimpanzee",
+    "map": "src/assets/textures/000128.4072877503.png",
+    "claimed": false
+  },
+  {
+    "id": 110,
+    "name": "Legal Cougar",
+    "map": "src/assets/textures/000129.2315265491.png",
+    "claimed": false
+  },
+  {
+    "id": 111,
+    "name": "Witty Canid",
+    "map": "src/assets/textures/000130.2363372067.png",
+    "claimed": false
+  },
+  {
+    "id": 112,
+    "name": "Due Ocelot",
+    "map": "src/assets/textures/000131.1075956686.png",
+    "claimed": false
+  },
+  {
+    "id": 113,
+    "name": "Academic Donkey",
+    "map": "src/assets/textures/000132.1052321835.png",
+    "claimed": false
+  },
+  {
+    "id": 114,
+    "name": "Jealous Hoverfly",
+    "map": "src/assets/textures/000133.2626780120.png",
+    "claimed": false
+  },
+  {
+    "id": 115,
+    "name": "Foolish Piranha",
+    "map": "src/assets/textures/000134.3246933114.png",
+    "claimed": false
+  },
+  {
+    "id": 116,
+    "name": "Fond Peafowl",
+    "map": "src/assets/textures/000135.2199064419.png",
+    "claimed": false
+  },
+  {
+    "id": 117,
+    "name": "Loose Rodent",
+    "map": "src/assets/textures/000136.3260972022.png",
+    "claimed": false
+  },
+  {
+    "id": 118,
+    "name": "Sporting Toucan",
+    "map": "src/assets/textures/000137.4019385639.png",
+    "claimed": false
+  },
+  {
+    "id": 119,
+    "name": "Intense Gecko",
+    "map": "src/assets/textures/000138.777083495.png",
+    "claimed": false
+  },
+  {
+    "id": 120,
+    "name": "Happy Junglefowl",
+    "map": "src/assets/textures/000139.3665571213.png",
+    "claimed": false
+  },
+  {
+    "id": 121,
+    "name": "Amused Earthworm",
+    "map": "src/assets/textures/000140.2702813928.png",
+    "claimed": false
+  },
+  {
+    "id": 122,
+    "name": "Female Bandicoot",
+    "map": "src/assets/textures/000141.205866783.png",
+    "claimed": false
+  },
+  {
+    "id": 123,
+    "name": "Ugliest Bison",
+    "map": "src/assets/textures/000142.1100182320.png",
+    "claimed": false
+  },
+  {
+    "id": 124,
+    "name": "Juicy Magpie",
+    "map": "src/assets/textures/000143.179832217.png",
+    "claimed": false
+  },
+  {
+    "id": 125,
+    "name": "Wandering Dragon",
+    "map": "src/assets/textures/000144.808066239.png",
+    "claimed": false
+  },
+  {
+    "id": 126,
+    "name": "Intellectual Armadillo",
+    "map": "src/assets/textures/000145.3932175889.png",
+    "claimed": false
+  },
+  {
+    "id": 127,
+    "name": "Unique Rooster",
+    "map": "src/assets/textures/000146.3111497874.png",
+    "claimed": false
+  },
+  {
+    "id": 128,
+    "name": "Spotty Gorilla",
+    "map": "src/assets/textures/000147.2109196405.png",
+    "claimed": false
+  },
+  {
+    "id": 129,
+    "name": "Latin Barnacle",
+    "map": "src/assets/textures/000148.3467832805.png",
+    "claimed": false
+  },
+  {
+    "id": 130,
+    "name": "Notable Lark",
+    "map": "src/assets/textures/000149.1057554195.png",
+    "claimed": false
+  },
+  {
+    "id": 131,
+    "name": "Fit Bee",
+    "map": "src/assets/textures/000150.2374607938.png",
+    "claimed": false
+  },
+  {
+    "id": 132,
+    "name": "Superior Vole",
+    "map": "src/assets/textures/000151.523371999.png",
+    "claimed": false
+  },
+  {
+    "id": 133,
+    "name": "Skilled Pigeon",
+    "map": "src/assets/textures/000152.681078281.png",
+    "claimed": false
+  },
+  {
+    "id": 134,
+    "name": "Inappropriate Lungfish",
+    "map": "src/assets/textures/000153.2638747365.png",
+    "claimed": false
+  },
+  {
+    "id": 135,
+    "name": "Crude Earwig",
+    "map": "src/assets/textures/000154.3914448460.png",
+    "claimed": false
+  },
+  {
+    "id": 136,
+    "name": "Rotten Vulture",
+    "map": "src/assets/textures/000155.2659738280.png",
+    "claimed": false
+  },
+  {
+    "id": 137,
+    "name": "Brief Tuna",
+    "map": "src/assets/textures/000156.94500693.png",
+    "claimed": false
+  },
+  {
+    "id": 138,
+    "name": "Yearling Xerinae",
+    "map": "src/assets/textures/000157.2155646927.png",
+    "claimed": false
+  },
+  {
+    "id": 139,
+    "name": "Jolly Tortoise",
+    "map": "src/assets/textures/000158.2845219317.png",
+    "claimed": false
+  },
+  {
+    "id": 140,
+    "name": "Orthodox Hummingbird",
+    "map": "src/assets/textures/000159.522462612.png",
+    "claimed": false
+  },
+  {
+    "id": 141,
+    "name": "Bare Fish",
+    "map": "src/assets/textures/000160.170997036.png",
+    "claimed": false
+  },
+  {
+    "id": 142,
+    "name": "Breakable Eagle",
+    "map": "src/assets/textures/000161.1918323988.png",
+    "claimed": false
+  },
+  {
+    "id": 143,
+    "name": "Typical Urial",
+    "map": "src/assets/textures/000162.3617130856.png",
+    "claimed": false
+  },
+  {
+    "id": 144,
+    "name": "Unknown Wren",
+    "map": "src/assets/textures/000163.2360611363.png",
+    "claimed": false
+  },
+  {
+    "id": 145,
+    "name": "Bloody Tern",
+    "map": "src/assets/textures/000164.3779917050.png",
+    "claimed": false
+  },
+  {
+    "id": 146,
+    "name": "Lovely Reindeer",
+    "map": "src/assets/textures/000165.3068566160.png",
+    "claimed": false
+  },
+  {
+    "id": 147,
+    "name": "Horizontal Stork",
+    "map": "src/assets/textures/000166.1603563197.png",
+    "claimed": false
+  },
+  {
+    "id": 148,
+    "name": "Slow Koala",
+    "map": "src/assets/textures/000167.3680172068.png",
+    "claimed": false
+  },
+  {
+    "id": 149,
+    "name": "Spectacular Planarian",
+    "map": "src/assets/textures/000168.239267764.png",
+    "claimed": false
+  },
+  {
+    "id": 150,
+    "name": "Parental Tiger",
+    "map": "src/assets/textures/000169.2821382071.png",
+    "claimed": false
+  },
+  {
+    "id": 151,
+    "name": "Fun Butterfly",
+    "map": "src/assets/textures/000170.2173839135.png",
+    "claimed": false
+  },
+  {
+    "id": 152,
+    "name": "Busy Wolf",
+    "map": "src/assets/textures/000171.2638508754.png",
+    "claimed": false
+  },
+  {
+    "id": 153,
+    "name": "Future Primate",
+    "map": "src/assets/textures/000172.3919959638.png",
+    "claimed": false
+  },
+  {
+    "id": 154,
+    "name": "Aggressive Chimpanzee",
+    "map": "src/assets/textures/000173.2313119386.png",
+    "claimed": false
+  },
+  {
+    "id": 155,
+    "name": "Genetic Rooster",
+    "map": "src/assets/textures/000174.2006482475.png",
+    "claimed": false
+  },
+  {
+    "id": 156,
+    "name": "Random Pony",
+    "map": "src/assets/textures/000175.1934316922.png",
+    "claimed": false
+  },
+  {
+    "id": 157,
+    "name": "Northern Wallaby",
+    "map": "src/assets/textures/000176.3137802097.png",
+    "claimed": false
+  },
+  {
+    "id": 158,
+    "name": "Intact Manatee",
+    "map": "src/assets/textures/000177.3489564101.png",
+    "claimed": false
+  },
+  {
+    "id": 159,
+    "name": "Vague Shrimp",
+    "map": "src/assets/textures/000178.2350204499.png",
+    "claimed": false
+  },
+  {
+    "id": 160,
+    "name": "Single Goat",
+    "map": "src/assets/textures/000179.611141513.png",
+    "claimed": false
+  },
+  {
+    "id": 161,
+    "name": "Superb Lark",
+    "map": "src/assets/textures/000180.354307472.png",
+    "claimed": false
+  },
+  {
+    "id": 162,
+    "name": "Rural Gamefowl",
+    "map": "src/assets/textures/000181.3901135794.png",
+    "claimed": false
+  },
+  {
+    "id": 163,
+    "name": "Cooing Marlin",
+    "map": "src/assets/textures/000182.4113001209.png",
+    "claimed": false
+  },
+  {
+    "id": 164,
+    "name": "Atomic Emu",
+    "map": "src/assets/textures/000183.4219118780.png",
+    "claimed": false
+  },
+  {
+    "id": 165,
+    "name": "Few Toucan",
+    "map": "src/assets/textures/000184.439679599.png",
+    "claimed": false
+  },
+  {
+    "id": 166,
+    "name": "Typical Bandicoot",
+    "map": "src/assets/textures/000185.3668645995.png",
+    "claimed": false
+  },
+  {
+    "id": 167,
+    "name": "Used Tiglon",
+    "map": "src/assets/textures/000186.1355476099.png",
+    "claimed": false
+  },
+  {
+    "id": 168,
+    "name": "Superb Marsupial",
+    "map": "src/assets/textures/000187.2860108210.png",
+    "claimed": false
+  },
+  {
+    "id": 169,
+    "name": "Inland Salmon",
+    "map": "src/assets/textures/000188.3481878461.png",
+    "claimed": false
+  },
+  {
+    "id": 170,
+    "name": "Unfair Centipede",
+    "map": "src/assets/textures/000189.533057209.png",
+    "claimed": false
+  },
+  {
+    "id": 171,
+    "name": "Exact Narwhal",
+    "map": "src/assets/textures/000190.3789299623.png",
+    "claimed": false
+  },
+  {
+    "id": 172,
+    "name": "Dominant Aardwolf",
+    "map": "src/assets/textures/000191.4269639372.png",
+    "claimed": false
+  },
+  {
+    "id": 173,
+    "name": "Wasteful Turkey",
+    "map": "src/assets/textures/000192.981488446.png",
+    "claimed": false
+  },
+  {
+    "id": 174,
+    "name": "Hissing Swallow",
+    "map": "src/assets/textures/000193.2481818327.png",
+    "claimed": false
+  },
+  {
+    "id": 175,
+    "name": "Vitreous Silverfish",
+    "map": "src/assets/textures/000194.1477298376.png",
+    "claimed": false
+  },
+  {
+    "id": 176,
+    "name": "Tired Warbler",
+    "map": "src/assets/textures/000195.637207239.png",
+    "claimed": false
+  },
+  {
+    "id": 177,
+    "name": "Objective Swift",
+    "map": "src/assets/textures/000196.181086407.png",
+    "claimed": false
+  },
+  {
+    "id": 178,
+    "name": "Binding Impala",
+    "map": "src/assets/textures/000197.108744293.png",
+    "claimed": false
+  },
+  {
+    "id": 179,
+    "name": "Specific Herring",
+    "map": "src/assets/textures/000198.2442832317.png",
+    "claimed": false
+  },
+  {
+    "id": 180,
+    "name": "Critical Bonobo",
+    "map": "src/assets/textures/000199.3884702538.png",
+    "claimed": false
+  },
+  {
+    "id": 181,
+    "name": "Allied Partridge",
+    "map": "src/assets/textures/000200.3684189331.png",
+    "claimed": false
+  },
+  {
+    "id": 182,
+    "name": "Interested Stingray",
+    "map": "src/assets/textures/000201.762999001.png",
+    "claimed": false
+  },
+  {
+    "id": 183,
+    "name": "Mysterious Felidae",
+    "map": "src/assets/textures/000202.710088689.png",
+    "claimed": false
+  },
+  {
+    "id": 184,
+    "name": "Excess Newt",
+    "map": "src/assets/textures/000203.4058133026.png",
+    "claimed": false
+  },
+  {
+    "id": 185,
+    "name": "Required Walrus",
+    "map": "src/assets/textures/000204.3961246191.png",
+    "claimed": false
+  },
+  {
+    "id": 186,
+    "name": "United Wildfowl",
+    "map": "src/assets/textures/000205.1628156787.png",
+    "claimed": false
+  },
+  {
+    "id": 187,
+    "name": "Certain Wildcat",
+    "map": "src/assets/textures/000206.3701147415.png",
+    "claimed": false
+  },
+  {
+    "id": 188,
+    "name": "Okay Firefly",
+    "map": "src/assets/textures/000207.1208837264.png",
+    "claimed": false
+  },
+  {
+    "id": 189,
+    "name": "Artistic Sparrow",
+    "map": "src/assets/textures/000208.105371480.png",
+    "claimed": false
+  },
+  {
+    "id": 190,
+    "name": "Extreme Swift",
+    "map": "src/assets/textures/000209.2903589219.png",
+    "claimed": false
+  },
+  {
+    "id": 191,
+    "name": "Novel Butterfly",
+    "map": "src/assets/textures/000210.3328711614.png",
+    "claimed": false
+  },
+  {
+    "id": 192,
+    "name": "Tender Elephant",
+    "map": "src/assets/textures/000211.3485681181.png",
+    "claimed": false
+  },
+  {
+    "id": 193,
+    "name": "Invisible Dragon",
+    "map": "src/assets/textures/000212.4209432157.png",
+    "claimed": false
+  },
+  {
+    "id": 194,
+    "name": "Defiant Marmoset",
+    "map": "src/assets/textures/000213.4105196277.png",
+    "claimed": false
+  },
+  {
+    "id": 195,
+    "name": "Eager Cuckoo",
+    "map": "src/assets/textures/000214.1139783715.png",
+    "claimed": false
+  },
+  {
+    "id": 196,
+    "name": "Delicate Marlin",
+    "map": "src/assets/textures/000215.1564696947.png",
+    "claimed": false
+  },
+  {
+    "id": 197,
+    "name": "Sparkling Koala",
+    "map": "src/assets/textures/000216.2842952503.png",
+    "claimed": false
+  },
+  {
+    "id": 198,
+    "name": "Keen Dragonfly",
+    "map": "src/assets/textures/000217.2686660823.png",
+    "claimed": false
+  },
+  {
+    "id": 199,
+    "name": "Outside Rook",
+    "map": "src/assets/textures/000218.1029289557.png",
+    "claimed": false
+  },
+  {
+    "id": 200,
+    "name": "Eventual Harrier",
+    "map": "src/assets/textures/000219.1708084958.png",
+    "claimed": false
+  },
+  {
+    "id": 201,
+    "name": "Useful Mink",
+    "map": "src/assets/textures/000220.1113626164.png",
+    "claimed": false
+  },
+  {
+    "id": 202,
+    "name": "Assistant Locust",
+    "map": "src/assets/textures/000221.1133629514.png",
+    "claimed": false
+  },
+  {
+    "id": 203,
+    "name": "Absent Junglefowl",
+    "map": "src/assets/textures/000222.2279635832.png",
+    "claimed": false
+  },
+  {
+    "id": 204,
+    "name": "Manual Gamefowl",
+    "map": "src/assets/textures/000223.2168649444.png",
+    "claimed": false
+  },
+  {
+    "id": 205,
+    "name": "Marked Ox",
+    "map": "src/assets/textures/000224.1847064202.png",
+    "claimed": false
+  },
+  {
+    "id": 206,
+    "name": "Partial Perch",
+    "map": "src/assets/textures/000225.1172413704.png",
+    "claimed": false
+  },
+  {
+    "id": 207,
+    "name": "Distinct Mandrill",
+    "map": "src/assets/textures/000226.1940335865.png",
+    "claimed": false
+  },
+  {
+    "id": 208,
+    "name": "Printed Orca",
+    "map": "src/assets/textures/000227.964485079.png",
+    "claimed": false
+  },
+  {
+    "id": 209,
+    "name": "Disciplinary Ox",
+    "map": "src/assets/textures/000228.3555423590.png",
+    "claimed": false
+  },
+  {
+    "id": 210,
+    "name": "Thorough Jaguar",
+    "map": "src/assets/textures/000229.1686173793.png",
+    "claimed": false
+  },
+  {
+    "id": 211,
+    "name": "External Goldfish",
+    "map": "src/assets/textures/000230.3453193916.png",
+    "claimed": false
+  },
+  {
+    "id": 212,
+    "name": "Extraordinary Snail",
+    "map": "src/assets/textures/000231.2980122709.png",
+    "claimed": false
+  },
+  {
+    "id": 213,
+    "name": "Experienced Turkey",
+    "map": "src/assets/textures/000232.2953751296.png",
+    "claimed": false
+  },
+  {
+    "id": 214,
+    "name": "Damaged Earthworm",
+    "map": "src/assets/textures/000233.2320503665.png",
+    "claimed": false
+  },
+  {
+    "id": 215,
+    "name": "Powerful Mollusk",
+    "map": "src/assets/textures/000234.3682518.png",
+    "claimed": false
+  },
+  {
+    "id": 216,
+    "name": "Adequate Otter",
+    "map": "src/assets/textures/000235.3674668518.png",
+    "claimed": false
+  },
+  {
+    "id": 217,
+    "name": "Conventional Wolverine",
+    "map": "src/assets/textures/000236.3679964002.png",
+    "claimed": false
+  },
+  {
+    "id": 218,
+    "name": "Elegant Booby",
+    "map": "src/assets/textures/000237.1805439691.png",
+    "claimed": false
+  },
+  {
+    "id": 219,
+    "name": "Vital Dingo",
+    "map": "src/assets/textures/000238.1607542154.png",
+    "claimed": false
+  },
+  {
+    "id": 220,
+    "name": "Rural Ladybug",
+    "map": "src/assets/textures/000239.1110606420.png",
+    "claimed": false
+  },
+  {
+    "id": 221,
+    "name": "Illegal Crane",
+    "map": "src/assets/textures/000240.3274388828.png",
+    "claimed": false
+  },
+  {
+    "id": 222,
+    "name": "Verbal Ox",
+    "map": "src/assets/textures/000241.436833739.png",
+    "claimed": false
+  },
+  {
+    "id": 223,
+    "name": "Ambitious Parakeet",
+    "map": "src/assets/textures/000242.172933101.png",
+    "claimed": false
+  },
+  {
+    "id": 224,
+    "name": "Allied Donkey",
+    "map": "src/assets/textures/000243.3036181809.png",
+    "claimed": false
+  },
+  {
+    "id": 225,
+    "name": "Stiff Bovid",
+    "map": "src/assets/textures/000244.2670691423.png",
+    "claimed": false
+  },
+  {
+    "id": 226,
+    "name": "Resident Llama",
+    "map": "src/assets/textures/000245.684835946.png",
+    "claimed": false
+  },
+  {
+    "id": 227,
+    "name": "Historic Marmoset",
+    "map": "src/assets/textures/000246.402285638.png",
+    "claimed": false
+  },
+  {
+    "id": 228,
+    "name": "Tragic Gorilla",
+    "map": "src/assets/textures/000247.959800920.png",
+    "claimed": false
+  },
+  {
+    "id": 229,
+    "name": "Endless Iguana",
+    "map": "src/assets/textures/000248.3038496122.png",
+    "claimed": false
+  },
+  {
+    "id": 230,
+    "name": "Drab Swan",
+    "map": "src/assets/textures/000249.609094561.png",
+    "claimed": false
+  },
+  {
+    "id": 231,
+    "name": "Unemployed Guppy",
+    "map": "src/assets/textures/000250.1019518099.png",
+    "claimed": false
+  },
+  {
+    "id": 232,
+    "name": "Fellow Dog",
+    "map": "src/assets/textures/000251.2062925921.png",
+    "claimed": false
+  },
+  {
+    "id": 233,
+    "name": "Effective Cardinal",
+    "map": "src/assets/textures/000252.3169517562.png",
+    "claimed": false
+  },
+  {
+    "id": 234,
+    "name": "Adorable Capybara",
+    "map": "src/assets/textures/000253.3223614284.png",
+    "claimed": false
+  },
+  {
+    "id": 235,
+    "name": "Gentle Cephalopod",
+    "map": "src/assets/textures/000254.2667403317.png",
+    "claimed": false
+  },
+  {
+    "id": 236,
+    "name": "Nearby Meadowlark",
+    "map": "src/assets/textures/000255.2151518726.png",
+    "claimed": false
+  },
+  {
+    "id": 237,
+    "name": "Cruel Dragon",
+    "map": "src/assets/textures/000256.2140627544.png",
+    "claimed": false
+  },
+  {
+    "id": 238,
+    "name": "Potential Fox",
+    "map": "src/assets/textures/000257.4158359038.png",
+    "claimed": false
+  },
+  {
+    "id": 239,
+    "name": "Fluffy Frog",
+    "map": "src/assets/textures/000258.2121816983.png",
+    "claimed": false
+  },
+  {
+    "id": 240,
+    "name": "Awake Sheep",
+    "map": "src/assets/textures/000259.462506724.png",
+    "claimed": false
+  },
+  {
+    "id": 241,
+    "name": "Willing Cicada",
+    "map": "src/assets/textures/000260.3862589143.png",
+    "claimed": false
+  },
+  {
+    "id": 242,
+    "name": "Glad Alpaca",
+    "map": "src/assets/textures/000261.3728375285.png",
+    "claimed": false
+  },
+  {
+    "id": 243,
+    "name": "Willowy Boar",
+    "map": "src/assets/textures/000262.2677694092.png",
+    "claimed": false
+  },
+  {
+    "id": 244,
+    "name": "Feminist Prawn",
+    "map": "src/assets/textures/000263.3776814727.png",
+    "claimed": false
+  },
+  {
+    "id": 245,
+    "name": "Yappiest Lynx",
+    "map": "src/assets/textures/000264.3806030372.png",
+    "claimed": false
+  },
+  {
+    "id": 246,
+    "name": "Superb Ant",
+    "map": "src/assets/textures/000265.3740168513.png",
+    "claimed": false
+  },
+  {
+    "id": 247,
+    "name": "Renewed Hoverfly",
+    "map": "src/assets/textures/000266.2832833888.png",
+    "claimed": false
+  },
+  {
+    "id": 248,
+    "name": "Proposed Rook",
+    "map": "src/assets/textures/000267.3525890688.png",
+    "claimed": false
+  },
+  {
+    "id": 249,
+    "name": "Great Leech",
+    "map": "src/assets/textures/000268.1740394795.png",
+    "claimed": false
+  },
+  {
+    "id": 250,
+    "name": "Deaf Wolverine",
+    "map": "src/assets/textures/000269.4294500128.png",
+    "claimed": false
+  },
+  {
+    "id": 251,
+    "name": "Delighted Vulture",
+    "map": "src/assets/textures/000270.2530125753.png",
+    "claimed": false
+  },
+  {
+    "id": 252,
+    "name": "Musical Bobcat",
+    "map": "src/assets/textures/000271.2936107482.png",
+    "claimed": false
+  },
+  {
+    "id": 253,
+    "name": "Divine Bedbug",
+    "map": "src/assets/textures/000272.203299941.png",
+    "claimed": false
+  },
+  {
+    "id": 254,
+    "name": "Devoted Crawdad",
+    "map": "src/assets/textures/000273.1935149567.png",
+    "claimed": false
+  },
+  {
+    "id": 255,
+    "name": "Young Shark",
+    "map": "src/assets/textures/000274.2399642816.png",
+    "claimed": false
+  },
+  {
+    "id": 256,
+    "name": "Massive Marten",
+    "map": "src/assets/textures/000275.3853463683.png",
+    "claimed": false
+  },
+  {
+    "id": 257,
+    "name": "Short Flyingfish",
+    "map": "src/assets/textures/000276.568845720.png",
+    "claimed": false
+  },
+  {
+    "id": 258,
+    "name": "Convenient Silkworm",
+    "map": "src/assets/textures/000277.884619342.png",
+    "claimed": false
+  },
+  {
+    "id": 259,
+    "name": "Mean Roadrunner",
+    "map": "src/assets/textures/000278.2795680278.png",
+    "claimed": false
+  },
+  {
+    "id": 260,
+    "name": "Necessary Earwig",
+    "map": "src/assets/textures/000279.1055873985.png",
+    "claimed": false
+  },
+  {
+    "id": 261,
+    "name": "Courageous Manatee",
+    "map": "src/assets/textures/000280.992858856.png",
+    "claimed": false
+  },
+  {
+    "id": 262,
+    "name": "Modern Tuna",
+    "map": "src/assets/textures/000281.3785380483.png",
+    "claimed": false
+  },
+  {
+    "id": 263,
+    "name": "Final Anglerfish",
+    "map": "src/assets/textures/000282.2765879405.png",
+    "claimed": false
+  },
+  {
+    "id": 264,
+    "name": "Creative Pinniped",
+    "map": "src/assets/textures/000283.1297133922.png",
+    "claimed": false
+  },
+  {
+    "id": 265,
+    "name": "Private Zebra",
+    "map": "src/assets/textures/000284.1732420834.png",
+    "claimed": false
+  },
+  {
+    "id": 266,
+    "name": "Colorful Penguin",
+    "map": "src/assets/textures/000285.721967957.png",
+    "claimed": false
+  },
+  {
+    "id": 267,
+    "name": "Accessible Cheetah",
+    "map": "src/assets/textures/000286.3209029265.png",
+    "claimed": false
+  },
+  {
+    "id": 268,
+    "name": "Crazy Clam",
+    "map": "src/assets/textures/000287.3633070068.png",
+    "claimed": false
+  },
+  {
+    "id": 269,
+    "name": "Latin Gamefowl",
+    "map": "src/assets/textures/000288.3407396444.png",
+    "claimed": false
+  },
+  {
+    "id": 270,
+    "name": "Actual Whippet",
+    "map": "src/assets/textures/000289.215068311.png",
+    "claimed": false
+  },
+  {
+    "id": 271,
+    "name": "Secret Stingray",
+    "map": "src/assets/textures/000290.3511434491.png",
+    "claimed": false
+  },
+  {
+    "id": 272,
+    "name": "Fat Prawn",
+    "map": "src/assets/textures/000291.3146480716.png",
+    "claimed": false
+  },
+  {
+    "id": 273,
+    "name": "Yearning Constrictor",
+    "map": "src/assets/textures/000292.487358970.png",
+    "claimed": false
+  },
+  {
+    "id": 274,
+    "name": "Eastern Panther",
+    "map": "src/assets/textures/000293.2380931992.png",
+    "claimed": false
+  },
+  {
+    "id": 275,
+    "name": "Raw Anteater",
+    "map": "src/assets/textures/000294.3188023435.png",
+    "claimed": false
+  },
+  {
+    "id": 276,
+    "name": "Vocal Mongoose",
+    "map": "src/assets/textures/000295.6990716.png",
+    "claimed": false
+  },
+  {
+    "id": 277,
+    "name": "Renewed Asp",
+    "map": "src/assets/textures/000296.2650156184.png",
+    "claimed": false
+  },
+  {
+    "id": 278,
+    "name": "Slight Quokka",
+    "map": "src/assets/textures/000297.1580554303.png",
+    "claimed": false
+  },
+  {
+    "id": 279,
+    "name": "Yearling Ptarmigan",
+    "map": "src/assets/textures/000298.1232845385.png",
+    "claimed": false
+  },
+  {
+    "id": 280,
+    "name": "Genuine Spider",
+    "map": "src/assets/textures/000299.2663972940.png",
+    "claimed": false
+  },
+  {
+    "id": 281,
+    "name": "Current Marlin",
+    "map": "src/assets/textures/000300.2609905535.png",
+    "claimed": false
+  },
+  {
+    "id": 282,
+    "name": "Christian Unicorn",
+    "map": "src/assets/textures/000301.2397122943.png",
+    "claimed": false
+  },
+  {
+    "id": 283,
+    "name": "Northern Flamingo",
+    "map": "src/assets/textures/000302.2256105614.png",
+    "claimed": false
+  },
+  {
+    "id": 284,
+    "name": "Significant Wildfowl",
+    "map": "src/assets/textures/000303.1741868433.png",
+    "claimed": false
+  },
+  {
+    "id": 285,
+    "name": "Puzzled Mastodon",
+    "map": "src/assets/textures/000304.1621246994.png",
+    "claimed": false
+  },
+  {
+    "id": 286,
+    "name": "Fragile Primate",
+    "map": "src/assets/textures/000305.815422746.png",
+    "claimed": false
+  },
+  {
+    "id": 287,
+    "name": "Panicky Rattlesnake",
+    "map": "src/assets/textures/000306.2670813954.png",
+    "claimed": false
+  },
+  {
+    "id": 288,
+    "name": "Scrawny Limpet",
+    "map": "src/assets/textures/000307.4176322500.png",
+    "claimed": false
+  },
+  {
+    "id": 289,
+    "name": "Ambitious Barracuda",
+    "map": "src/assets/textures/000308.3395758019.png",
+    "claimed": false
+  },
+  {
+    "id": 290,
+    "name": "Visible Panda",
+    "map": "src/assets/textures/000309.1506263142.png",
+    "claimed": false
+  },
+  {
+    "id": 291,
+    "name": "Reliable Jellyfish",
+    "map": "src/assets/textures/000310.4091113090.png",
+    "claimed": false
+  },
+  {
+    "id": 292,
+    "name": "Anxious Catshark",
+    "map": "src/assets/textures/000311.3752989036.png",
+    "claimed": false
+  },
+  {
+    "id": 293,
+    "name": "Increased Dormouse",
+    "map": "src/assets/textures/000312.1716704057.png",
+    "claimed": false
+  },
+  {
+    "id": 294,
+    "name": "Excellent Crocodile",
+    "map": "src/assets/textures/000313.1619713780.png",
+    "claimed": false
+  },
+  {
+    "id": 295,
+    "name": "Troubled Termite",
+    "map": "src/assets/textures/000314.2086167170.png",
+    "claimed": false
+  },
+  {
+    "id": 296,
+    "name": "Just Shark",
+    "map": "src/assets/textures/000315.3271839969.png",
+    "claimed": false
+  },
+  {
+    "id": 297,
+    "name": "Prepared Bug",
+    "map": "src/assets/textures/000316.2589717236.png",
+    "claimed": false
+  },
+  {
+    "id": 298,
+    "name": "Rational Ant",
+    "map": "src/assets/textures/000317.696169239.png",
+    "claimed": false
+  },
+  {
+    "id": 299,
+    "name": "Surprising Cheetah",
+    "map": "src/assets/textures/000318.2832294887.png",
+    "claimed": false
+  },
+  {
+    "id": 300,
+    "name": "Squealing Llama",
+    "map": "src/assets/textures/000319.1228528983.png",
+    "claimed": false
+  },
+  {
+    "id": 301,
+    "name": "Ill Cobra",
+    "map": "src/assets/textures/000320.341448048.png",
+    "claimed": false
+  },
+  {
+    "id": 302,
+    "name": "Dead Tyrannosaurus",
+    "map": "src/assets/textures/000321.3447086578.png",
+    "claimed": false
+  },
+  {
+    "id": 303,
+    "name": "Content Lungfish",
+    "map": "src/assets/textures/000322.4037384443.png",
+    "claimed": false
+  },
+  {
+    "id": 304,
+    "name": "Like Planarian",
+    "map": "src/assets/textures/000323.4186857783.png",
+    "claimed": false
+  },
+  {
+    "id": 305,
+    "name": "Combined Rodent",
+    "map": "src/assets/textures/000324.3447850321.png",
+    "claimed": false
+  },
+  {
+    "id": 306,
+    "name": "Exclusive Goldfish",
+    "map": "src/assets/textures/000325.4238099415.png",
+    "claimed": false
+  },
+  {
+    "id": 307,
+    "name": "Full Boa",
+    "map": "src/assets/textures/000326.2173795882.png",
+    "claimed": false
+  },
+  {
+    "id": 308,
+    "name": "Back Rooster",
+    "map": "src/assets/textures/000327.492175019.png",
+    "claimed": false
+  },
+  {
+    "id": 309,
+    "name": "Solar Pinniped",
+    "map": "src/assets/textures/000328.90788258.png",
+    "claimed": false
+  },
+  {
+    "id": 310,
+    "name": "Fiscal Bass",
+    "map": "src/assets/textures/000329.1580236105.png",
+    "claimed": false
+  },
+  {
+    "id": 311,
+    "name": "Flaky Vole",
+    "map": "src/assets/textures/000330.2507962415.png",
+    "claimed": false
+  },
+  {
+    "id": 312,
+    "name": "Bizarre Slug",
+    "map": "src/assets/textures/000331.865921403.png",
+    "claimed": false
+  },
+  {
+    "id": 313,
+    "name": "Specified Smelt",
+    "map": "src/assets/textures/000332.684121643.png",
+    "claimed": false
+  },
+  {
+    "id": 314,
+    "name": "Xeric Mammal",
+    "map": "src/assets/textures/000333.2598761503.png",
+    "claimed": false
+  },
+  {
+    "id": 315,
+    "name": "Recent Quelea",
+    "map": "src/assets/textures/000334.1262104328.png",
+    "claimed": false
+  },
+  {
+    "id": 316,
+    "name": "Maximum Constrictor",
+    "map": "src/assets/textures/000335.2517483758.png",
+    "claimed": false
+  },
+  {
+    "id": 317,
+    "name": "Tiny Goldfish",
+    "map": "src/assets/textures/000336.768411510.png",
+    "claimed": false
+  },
+  {
+    "id": 318,
+    "name": "Loose Landfowl",
+    "map": "src/assets/textures/000337.825335868.png",
+    "claimed": false
+  },
+  {
+    "id": 319,
+    "name": "Compact Donkey",
+    "map": "src/assets/textures/000338.377295308.png",
+    "claimed": false
+  },
+  {
+    "id": 320,
+    "name": "Zestful Muskox",
+    "map": "src/assets/textures/000339.2708889481.png",
+    "claimed": false
+  },
+  {
+    "id": 321,
+    "name": "Troubled Spider",
+    "map": "src/assets/textures/000340.2849813347.png",
+    "claimed": false
+  },
+  {
+    "id": 322,
+    "name": "Continuing Panda",
+    "map": "src/assets/textures/000341.2273872070.png",
+    "claimed": false
+  },
+  {
+    "id": 323,
+    "name": "Tame Python",
+    "map": "src/assets/textures/000342.2113351939.png",
+    "claimed": false
+  },
+  {
+    "id": 324,
+    "name": "Radical Dove",
+    "map": "src/assets/textures/000343.2844195862.png",
+    "claimed": false
+  },
+  {
+    "id": 325,
+    "name": "Continental Gayal",
+    "map": "src/assets/textures/000344.638670858.png",
+    "claimed": false
+  },
+  {
+    "id": 326,
+    "name": "Impossible Lungfish",
+    "map": "src/assets/textures/000345.2689649386.png",
+    "claimed": false
+  },
+  {
+    "id": 327,
+    "name": "Nearby Vicuna",
+    "map": "src/assets/textures/000346.2158887291.png",
+    "claimed": false
+  },
+  {
+    "id": 328,
+    "name": "Husky Flea",
+    "map": "src/assets/textures/000347.2683553246.png",
+    "claimed": false
+  },
+  {
+    "id": 329,
+    "name": "Dangerous Angelfish",
+    "map": "src/assets/textures/000348.69871289.png",
+    "claimed": false
+  },
+  {
+    "id": 330,
+    "name": "Far Duck",
+    "map": "src/assets/textures/000349.2690504524.png",
+    "claimed": false
+  },
+  {
+    "id": 331,
+    "name": "Steep Chimpanzee",
+    "map": "src/assets/textures/000350.3259105628.png",
+    "claimed": false
+  },
+  {
+    "id": 332,
+    "name": "Naked Beaver",
+    "map": "src/assets/textures/000351.1981556285.png",
+    "claimed": false
+  },
+  {
+    "id": 333,
+    "name": "Prominent Coral",
+    "map": "src/assets/textures/000352.2178762042.png",
+    "claimed": false
+  },
+  {
+    "id": 334,
+    "name": "Outer Chameleon",
+    "map": "src/assets/textures/000353.3381505427.png",
+    "claimed": false
+  },
+  {
+    "id": 335,
+    "name": "Territorial Emu",
+    "map": "src/assets/textures/000354.617418803.png",
+    "claimed": false
+  },
+  {
+    "id": 336,
+    "name": "Net Tick",
+    "map": "src/assets/textures/000355.3053719054.png",
+    "claimed": false
+  },
+  {
+    "id": 337,
+    "name": "Metropolitan Guppy",
+    "map": "src/assets/textures/000356.2958372423.png",
+    "claimed": false
+  },
+  {
+    "id": 338,
+    "name": "Sore Canidae",
+    "map": "src/assets/textures/000357.2654659127.png",
+    "claimed": false
+  },
+  {
+    "id": 339,
+    "name": "Guilty Dinosaur",
+    "map": "src/assets/textures/000358.4049242797.png",
+    "claimed": false
+  },
+  {
+    "id": 340,
+    "name": "Whole Orangutan",
+    "map": "src/assets/textures/000359.3364188155.png",
+    "claimed": false
+  },
+  {
+    "id": 341,
+    "name": "Uniform Cockroach",
+    "map": "src/assets/textures/000360.160769858.png",
+    "claimed": false
+  },
+  {
+    "id": 342,
+    "name": "Superior Goat",
+    "map": "src/assets/textures/000361.3757384178.png",
+    "claimed": false
+  },
+  {
+    "id": 343,
+    "name": "Thick Gull",
+    "map": "src/assets/textures/000362.1987855682.png",
+    "claimed": false
+  },
+  {
+    "id": 344,
+    "name": "Striking Shrimp",
+    "map": "src/assets/textures/000363.555129367.png",
+    "claimed": false
+  },
+  {
+    "id": 345,
+    "name": "Identical Silkworm",
+    "map": "src/assets/textures/000364.3610577156.png",
+    "claimed": false
+  },
+  {
+    "id": 346,
+    "name": "Disciplinary Bird",
+    "map": "src/assets/textures/000365.3833131161.png",
+    "claimed": false
+  },
+  {
+    "id": 347,
+    "name": "Only Iguana",
+    "map": "src/assets/textures/000366.3959230767.png",
+    "claimed": false
+  },
+  {
+    "id": 348,
+    "name": "Driving Squid",
+    "map": "src/assets/textures/000367.3322184054.png",
+    "claimed": false
+  },
+  {
+    "id": 349,
+    "name": "Xerothermic Halibut",
+    "map": "src/assets/textures/000368.144723247.png",
+    "claimed": false
+  },
+  {
+    "id": 350,
+    "name": "Confused Bug",
+    "map": "src/assets/textures/000369.560879299.png",
+    "claimed": false
+  },
+  {
+    "id": 351,
+    "name": "Burning Cow",
+    "map": "src/assets/textures/000370.2138417474.png",
+    "claimed": false
+  },
+  {
+    "id": 352,
+    "name": "Powerful Shrew",
+    "map": "src/assets/textures/000371.3437027552.png",
+    "claimed": false
+  },
+  {
+    "id": 353,
+    "name": "Exclusive Beaver",
+    "map": "src/assets/textures/000372.597133569.png",
+    "claimed": false
+  },
+  {
+    "id": 354,
+    "name": "Armed Minnow",
+    "map": "src/assets/textures/000373.2006924942.png",
+    "claimed": false
+  },
+  {
+    "id": 355,
+    "name": "Sympathetic Pony",
+    "map": "src/assets/textures/000374.2802442991.png",
+    "claimed": false
+  },
+  {
+    "id": 356,
+    "name": "Natural Dingo",
+    "map": "src/assets/textures/000375.4044115381.png",
+    "claimed": false
+  },
+  {
+    "id": 357,
+    "name": "Skilled Jaguar",
+    "map": "src/assets/textures/000376.1930194846.png",
+    "claimed": false
+  },
+  {
+    "id": 358,
+    "name": "Statutory Impala",
+    "map": "src/assets/textures/000377.153851716.png",
+    "claimed": false
+  },
+  {
+    "id": 359,
+    "name": "Revolutionary Salmon",
+    "map": "src/assets/textures/000378.443994866.png",
+    "claimed": false
+  },
+  {
+    "id": 360,
+    "name": "Familiar Wallaby",
+    "map": "src/assets/textures/000379.2056272254.png",
+    "claimed": false
+  },
+  {
+    "id": 361,
+    "name": "Thorough Flea",
+    "map": "src/assets/textures/000380.1941361204.png",
+    "claimed": false
+  },
+  {
+    "id": 362,
+    "name": "Fortunate Platypus",
+    "map": "src/assets/textures/000381.1486321464.png",
+    "claimed": false
+  },
+  {
+    "id": 363,
+    "name": "Inquisitive Panda",
+    "map": "src/assets/textures/000382.1861184277.png",
+    "claimed": false
+  },
+  {
+    "id": 364,
+    "name": "Net Tahr",
+    "map": "src/assets/textures/000383.533871816.png",
+    "claimed": false
+  },
+  {
+    "id": 365,
+    "name": "Fat Sailfish",
+    "map": "src/assets/textures/000384.1083211569.png",
+    "claimed": false
+  },
+  {
+    "id": 366,
+    "name": "Only Armadillo",
+    "map": "src/assets/textures/000385.2992940366.png",
+    "claimed": false
+  },
+  {
+    "id": 367,
+    "name": "Curious Cockroach",
+    "map": "src/assets/textures/000386.1859489414.png",
+    "claimed": false
+  },
+  {
+    "id": 368,
+    "name": "Useless Loon",
+    "map": "src/assets/textures/000387.1358675500.png",
+    "claimed": false
+  },
+  {
+    "id": 369,
+    "name": "Mild Wallaby",
+    "map": "src/assets/textures/000388.320813144.png",
+    "claimed": false
+  },
+  {
+    "id": 370,
+    "name": "Quick Angelfish",
+    "map": "src/assets/textures/000389.3128541451.png",
+    "claimed": false
+  },
+  {
+    "id": 371,
+    "name": "Alive Thrush",
+    "map": "src/assets/textures/000390.639388712.png",
+    "claimed": false
+  },
+  {
+    "id": 372,
+    "name": "Bad Panda",
+    "map": "src/assets/textures/000391.2243076743.png",
+    "claimed": false
+  },
+  {
+    "id": 373,
+    "name": "Independent Possum",
+    "map": "src/assets/textures/000392.1954855879.png",
+    "claimed": false
+  },
+  {
+    "id": 374,
+    "name": "Separate Puffin",
+    "map": "src/assets/textures/000393.111784760.png",
+    "claimed": false
+  },
+  {
+    "id": 375,
+    "name": "Respective Crocodile",
+    "map": "src/assets/textures/000394.2131454532.png",
+    "claimed": false
+  },
+  {
+    "id": 376,
+    "name": "Negative Catfish",
+    "map": "src/assets/textures/000395.2025321411.png",
+    "claimed": false
+  },
+  {
+    "id": 377,
+    "name": "Mental Urial",
+    "map": "src/assets/textures/000396.4166664002.png",
+    "claimed": false
+  },
+  {
+    "id": 378,
+    "name": "Warm Tapir",
+    "map": "src/assets/textures/000397.3880673856.png",
+    "claimed": false
+  },
+  {
+    "id": 379,
+    "name": "Given Chicken",
+    "map": "src/assets/textures/000398.1933131629.png",
+    "claimed": false
+  },
+  {
+    "id": 380,
+    "name": "Gross Bison",
+    "map": "src/assets/textures/000399.2946596009.png",
+    "claimed": false
+  },
+  {
+    "id": 381,
+    "name": "Evident Meerkat",
+    "map": "src/assets/textures/000400.3729122044.png",
+    "claimed": false
+  },
+  {
+    "id": 382,
+    "name": "Sensible Mouse",
+    "map": "src/assets/textures/000401.82742047.png",
+    "claimed": false
+  },
+  {
+    "id": 383,
+    "name": "Shiny Warbler",
+    "map": "src/assets/textures/000402.1889744559.png",
+    "claimed": false
+  },
+  {
+    "id": 384,
+    "name": "Tough Dingo",
+    "map": "src/assets/textures/000403.3749739016.png",
+    "claimed": false
+  },
+  {
+    "id": 385,
+    "name": "Honest Ox",
+    "map": "src/assets/textures/000404.2543734393.png",
+    "claimed": false
+  },
+  {
+    "id": 386,
+    "name": "Casual Gull",
+    "map": "src/assets/textures/000405.2807489960.png",
+    "claimed": false
+  },
+  {
+    "id": 387,
+    "name": "Holy Guineafowl",
+    "map": "src/assets/textures/000406.1342583265.png",
+    "claimed": false
+  },
+  {
+    "id": 388,
+    "name": "Cruel Skunk",
+    "map": "src/assets/textures/000407.2904739077.png",
+    "claimed": false
+  },
+  {
+    "id": 389,
+    "name": "Effective Wallaby",
+    "map": "src/assets/textures/000408.322891100.png",
+    "claimed": false
+  },
+  {
+    "id": 390,
+    "name": "Separate Bass",
+    "map": "src/assets/textures/000409.1137977367.png",
+    "claimed": false
+  },
+  {
+    "id": 391,
+    "name": "Slim Turkey",
+    "map": "src/assets/textures/000410.260396511.png",
+    "claimed": false
+  },
+  {
+    "id": 392,
+    "name": "Dramatic Louse",
+    "map": "src/assets/textures/000411.3801769040.png",
+    "claimed": false
+  },
+  {
+    "id": 393,
+    "name": "Elated Sturgeon",
+    "map": "src/assets/textures/000412.3590532361.png",
+    "claimed": false
+  },
+  {
+    "id": 394,
+    "name": "Yearning Jaguar",
+    "map": "src/assets/textures/000413.2315544402.png",
+    "claimed": false
+  },
+  {
+    "id": 395,
+    "name": "Functional Mastodon",
+    "map": "src/assets/textures/000414.2551655580.png",
+    "claimed": false
+  },
+  {
+    "id": 396,
+    "name": "Vivacious Rat",
+    "map": "src/assets/textures/000415.3297035070.png",
+    "claimed": false
+  },
+  {
+    "id": 397,
+    "name": "Presidential Bison",
+    "map": "src/assets/textures/000416.2748815976.png",
+    "claimed": false
+  },
+  {
+    "id": 398,
+    "name": "Artistic Peafowl",
+    "map": "src/assets/textures/000417.1699815262.png",
+    "claimed": false
+  },
+  {
+    "id": 399,
+    "name": "Sole Barracuda",
+    "map": "src/assets/textures/000418.2253756744.png",
+    "claimed": false
+  },
+  {
+    "id": 400,
+    "name": "Sick Thrush",
+    "map": "src/assets/textures/000419.284368985.png",
+    "claimed": false
+  },
+  {
+    "id": 401,
+    "name": "Yeasty Whale",
+    "map": "src/assets/textures/000420.1625409906.png",
+    "claimed": false
+  },
+  {
+    "id": 402,
+    "name": "Northern Herring",
+    "map": "src/assets/textures/000421.2001976310.png",
+    "claimed": false
+  },
+  {
+    "id": 403,
+    "name": "Tasteless Goose",
+    "map": "src/assets/textures/000422.3289638977.png",
+    "claimed": false
+  },
+  {
+    "id": 404,
+    "name": "Proud Peacock",
+    "map": "src/assets/textures/000423.1983770335.png",
+    "claimed": false
+  },
+  {
+    "id": 405,
+    "name": "Dead Leopard",
+    "map": "src/assets/textures/000424.1617160255.png",
+    "claimed": false
+  },
+  {
+    "id": 406,
+    "name": "Private Prawn",
+    "map": "src/assets/textures/000425.1320305210.png",
+    "claimed": false
+  },
+  {
+    "id": 407,
+    "name": "Ready Cod",
+    "map": "src/assets/textures/000426.1569047964.png",
+    "claimed": false
+  },
+  {
+    "id": 408,
+    "name": "Damaged Rabbit",
+    "map": "src/assets/textures/000427.563190945.png",
+    "claimed": false
+  },
+  {
+    "id": 409,
+    "name": "Future Iguana",
+    "map": "src/assets/textures/000428.68544459.png",
+    "claimed": false
+  },
+  {
+    "id": 410,
+    "name": "Direct Tiglon",
+    "map": "src/assets/textures/000429.3880676928.png",
+    "claimed": false
+  },
+  {
+    "id": 411,
+    "name": "Thin Cardinal",
+    "map": "src/assets/textures/000430.3927520871.png",
+    "claimed": false
+  },
+  {
+    "id": 412,
+    "name": "Selfish Quokka",
+    "map": "src/assets/textures/000431.1824459256.png",
+    "claimed": false
+  },
+  {
+    "id": 413,
+    "name": "Naked Ant",
+    "map": "src/assets/textures/000432.2229459123.png",
+    "claimed": false
+  },
+  {
+    "id": 414,
+    "name": "Formal Cat",
+    "map": "src/assets/textures/000433.1511031892.png",
+    "claimed": false
+  },
+  {
+    "id": 415,
+    "name": "Male Sheep",
+    "map": "src/assets/textures/000434.1715999909.png",
+    "claimed": false
+  },
+  {
+    "id": 416,
+    "name": "Wet Ladybug",
+    "map": "src/assets/textures/000435.811295360.png",
+    "claimed": false
+  },
+  {
+    "id": 417,
+    "name": "Wandering Rooster",
+    "map": "src/assets/textures/000436.2348315874.png",
+    "claimed": false
+  },
+  {
+    "id": 418,
+    "name": "Exact Kingfisher",
+    "map": "src/assets/textures/000437.1015216030.png",
+    "claimed": false
+  },
+  {
+    "id": 419,
+    "name": "Weird Mollusk",
+    "map": "src/assets/textures/000438.3702366230.png",
+    "claimed": false
+  },
+  {
+    "id": 420,
+    "name": "Male Landfowl",
+    "map": "src/assets/textures/000439.3262061882.png",
+    "claimed": false
+  },
+  {
+    "id": 421,
+    "name": "Fascinating Slug",
+    "map": "src/assets/textures/000440.1606930305.png",
+    "claimed": false
+  },
+  {
+    "id": 422,
+    "name": "Accused Mastodon",
+    "map": "src/assets/textures/000441.511693241.png",
+    "claimed": false
+  },
+  {
+    "id": 423,
+    "name": "Teenage Beetle",
+    "map": "src/assets/textures/000442.585403790.png",
+    "claimed": false
+  },
+  {
+    "id": 424,
+    "name": "Grand Guan",
+    "map": "src/assets/textures/000443.673156368.png",
+    "claimed": false
+  },
+  {
+    "id": 425,
+    "name": "Spotty Opossum",
+    "map": "src/assets/textures/000444.345950531.png",
+    "claimed": false
+  },
+  {
+    "id": 426,
+    "name": "Heavy Catshark",
+    "map": "src/assets/textures/000445.469239428.png",
+    "claimed": false
+  },
+  {
+    "id": 427,
+    "name": "Poor Muskox",
+    "map": "src/assets/textures/000446.3217393189.png",
+    "claimed": false
+  },
+  {
+    "id": 428,
+    "name": "Bored Bass",
+    "map": "src/assets/textures/000447.97523941.png",
+    "claimed": false
+  },
+  {
+    "id": 429,
+    "name": "Minimum Shark",
+    "map": "src/assets/textures/000448.87937128.png",
+    "claimed": false
+  },
+  {
+    "id": 430,
+    "name": "Chosen Donkey",
+    "map": "src/assets/textures/000449.935605009.png",
+    "claimed": false
+  },
+  {
+    "id": 431,
+    "name": "Allied Stingray",
+    "map": "src/assets/textures/000450.3032213536.png",
+    "claimed": false
+  },
+  {
+    "id": 432,
+    "name": "Domestic Chinchilla",
+    "map": "src/assets/textures/000451.2814989104.png",
+    "claimed": false
+  },
+  {
+    "id": 433,
+    "name": "Reliable Nightingale",
+    "map": "src/assets/textures/000452.2804765799.png",
+    "claimed": false
+  },
+  {
+    "id": 434,
+    "name": "Adverse Cobra",
+    "map": "src/assets/textures/000453.2034989394.png",
+    "claimed": false
+  },
+  {
+    "id": 435,
+    "name": "Regular Worm",
+    "map": "src/assets/textures/000454.155540691.png",
+    "claimed": false
+  },
+  {
+    "id": 436,
+    "name": "Supreme Jay",
+    "map": "src/assets/textures/000455.76730668.png",
+    "claimed": false
+  },
+  {
+    "id": 437,
+    "name": "Super Haddock",
+    "map": "src/assets/textures/000456.1759123054.png",
+    "claimed": false
+  },
+  {
+    "id": 438,
+    "name": "Zany Fox",
+    "map": "src/assets/textures/000457.3897714595.png",
+    "claimed": false
+  },
+  {
+    "id": 439,
+    "name": "Biological Haddock",
+    "map": "src/assets/textures/000458.1096878354.png",
+    "claimed": false
+  },
+  {
+    "id": 440,
+    "name": "Incredible Wombat",
+    "map": "src/assets/textures/000459.3930126412.png",
+    "claimed": false
+  },
+  {
+    "id": 441,
+    "name": "Resonant Dragonfly",
+    "map": "src/assets/textures/000460.397385294.png",
+    "claimed": false
+  },
+  {
+    "id": 442,
+    "name": "Unable Heron",
+    "map": "src/assets/textures/000461.2494369310.png",
+    "claimed": false
+  },
+  {
+    "id": 443,
+    "name": "Obvious Termite",
+    "map": "src/assets/textures/000462.3047513901.png",
+    "claimed": false
+  },
+  {
+    "id": 444,
+    "name": "Shy Louse",
+    "map": "src/assets/textures/000463.3131853115.png",
+    "claimed": false
+  },
+  {
+    "id": 445,
+    "name": "Criminal Quokka",
+    "map": "src/assets/textures/000464.2111440255.png",
+    "claimed": false
+  },
+  {
+    "id": 446,
+    "name": "Reasonable Mule",
+    "map": "src/assets/textures/000465.2810573099.png",
+    "claimed": false
+  },
+  {
+    "id": 447,
+    "name": "Urgent Gull",
+    "map": "src/assets/textures/000466.1875478223.png",
+    "claimed": false
+  },
+  {
+    "id": 448,
+    "name": "Worried Echidna",
+    "map": "src/assets/textures/000467.22498152.png",
+    "claimed": false
+  },
+  {
+    "id": 449,
+    "name": "Probable Lamprey",
+    "map": "src/assets/textures/000468.2398828669.png",
+    "claimed": false
+  },
+  {
+    "id": 450,
+    "name": "Exotic Jellyfish",
+    "map": "src/assets/textures/000469.1278934063.png",
+    "claimed": false
+  },
+  {
+    "id": 451,
+    "name": "Ordinary Wildcat",
+    "map": "src/assets/textures/000470.3464522493.png",
+    "claimed": false
+  },
+  {
+    "id": 452,
+    "name": "Extraordinary Crab",
+    "map": "src/assets/textures/000471.4224491215.png",
+    "claimed": false
+  },
+  {
+    "id": 453,
+    "name": "Revolutionary Chipmunk",
+    "map": "src/assets/textures/000472.1453549390.png",
+    "claimed": false
+  },
+  {
+    "id": 454,
+    "name": "Raspy Shrimp",
+    "map": "src/assets/textures/000473.1209149601.png",
+    "claimed": false
+  },
+  {
+    "id": 455,
+    "name": "Liable Reindeer",
+    "map": "src/assets/textures/000474.2149799596.png",
+    "claimed": false
+  },
+  {
+    "id": 456,
+    "name": "Basic Panda",
+    "map": "src/assets/textures/000475.199760882.png",
+    "claimed": false
+  },
+  {
+    "id": 457,
+    "name": "Thoughtless Whitefish",
+    "map": "src/assets/textures/000476.3245309006.png",
+    "claimed": false
+  },
+  {
+    "id": 458,
+    "name": "Testy Starfish",
+    "map": "src/assets/textures/000477.1522094509.png",
+    "claimed": false
+  },
+  {
+    "id": 459,
+    "name": "Level Kingfisher",
+    "map": "src/assets/textures/000478.2704057187.png",
+    "claimed": false
+  },
+  {
+    "id": 460,
+    "name": "Comprehensive Puma",
+    "map": "src/assets/textures/000479.3237489808.png",
+    "claimed": false
+  },
+  {
+    "id": 461,
+    "name": "Curved Tiglon",
+    "map": "src/assets/textures/000480.2714432684.png",
+    "claimed": false
+  },
+  {
+    "id": 462,
+    "name": "Eldest Warbler",
+    "map": "src/assets/textures/000481.336190154.png",
+    "claimed": false
+  },
+  {
+    "id": 463,
+    "name": "Living Halibut",
+    "map": "src/assets/textures/000482.2094116101.png",
+    "claimed": false
+  },
+  {
+    "id": 464,
+    "name": "Unlikely Dinosaur",
+    "map": "src/assets/textures/000483.4218699038.png",
+    "claimed": false
+  },
+  {
+    "id": 465,
+    "name": "Relieved Toucan",
+    "map": "src/assets/textures/000484.2163198829.png",
+    "claimed": false
+  },
+  {
+    "id": 466,
+    "name": "Circular Ladybug",
+    "map": "src/assets/textures/000485.1900090641.png",
+    "claimed": false
+  },
+  {
+    "id": 467,
+    "name": "Poor Koi",
+    "map": "src/assets/textures/000486.4181620621.png",
+    "claimed": false
+  },
+  {
+    "id": 468,
+    "name": "Parliamentary Goat",
+    "map": "src/assets/textures/000487.498152240.png",
+    "claimed": false
+  },
+  {
+    "id": 469,
+    "name": "Spotless Slug",
+    "map": "src/assets/textures/000488.2420807185.png",
+    "claimed": false
+  },
+  {
+    "id": 470,
+    "name": "Supreme Hummingbird",
+    "map": "src/assets/textures/000489.874180709.png",
+    "claimed": false
+  },
+  {
+    "id": 471,
+    "name": "Imaginative Wombat",
+    "map": "src/assets/textures/000490.2080778825.png",
+    "claimed": false
+  },
+  {
+    "id": 472,
+    "name": "Energetic Swordfish",
+    "map": "src/assets/textures/000491.2820883336.png",
+    "claimed": false
+  },
+  {
+    "id": 473,
+    "name": "Environmental Deer",
+    "map": "src/assets/textures/000492.2888780710.png",
+    "claimed": false
+  },
+  {
+    "id": 474,
+    "name": "Fierce Peacock",
+    "map": "src/assets/textures/000493.1197657184.png",
+    "claimed": false
+  },
+  {
+    "id": 475,
+    "name": "Temporary Bat",
+    "map": "src/assets/textures/000494.3271702598.png",
+    "claimed": false
+  },
+  {
+    "id": 476,
+    "name": "Tense Jackal",
+    "map": "src/assets/textures/000495.1640753121.png",
+    "claimed": false
+  },
+  {
+    "id": 477,
+    "name": "Deliberate Capybara",
+    "map": "src/assets/textures/000496.3351347785.png",
+    "claimed": false
+  },
+  {
+    "id": 478,
+    "name": "Formal Tick",
+    "map": "src/assets/textures/000497.2135922879.png",
+    "claimed": false
+  },
+  {
+    "id": 479,
+    "name": "Wandering Bobcat",
+    "map": "src/assets/textures/000498.3987184232.png",
+    "claimed": false
+  },
+  {
+    "id": 480,
+    "name": "Historical Grasshopper",
+    "map": "src/assets/textures/000499.1988281430.png",
+    "claimed": false
+  },
+  {
+    "id": 481,
+    "name": "Frozen Warbler",
+    "map": "src/assets/textures/000500.211916535.png",
+    "claimed": false
+  },
+  {
+    "id": 482,
+    "name": "Decisive Scorpion",
+    "map": "src/assets/textures/000501.2491367606.png",
+    "claimed": false
+  },
+  {
+    "id": 483,
+    "name": "Political Sole",
+    "map": "src/assets/textures/000502.1347161526.png",
+    "claimed": false
+  },
+  {
+    "id": 484,
+    "name": "Absolute Anteater",
+    "map": "src/assets/textures/000503.2855813502.png",
+    "claimed": false
+  },
+  {
+    "id": 485,
+    "name": "Delighted Owl",
+    "map": "src/assets/textures/000504.4259190038.png",
+    "claimed": false
+  },
+  {
+    "id": 486,
+    "name": "Steep Wren",
+    "map": "src/assets/textures/000505.3831659327.png",
+    "claimed": false
+  },
+  {
+    "id": 487,
+    "name": "Near Kiwi",
+    "map": "src/assets/textures/000506.3083630085.png",
+    "claimed": false
+  },
+  {
+    "id": 488,
+    "name": "Unnecessary Raccoon",
+    "map": "src/assets/textures/000507.859303273.png",
+    "claimed": false
+  },
+  {
+    "id": 489,
+    "name": "Unaware Condor",
+    "map": "src/assets/textures/000508.4106371583.png",
+    "claimed": false
+  },
+  {
+    "id": 490,
+    "name": "Delicious Mandrill",
+    "map": "src/assets/textures/000509.3832191884.png",
+    "claimed": false
+  },
+  {
+    "id": 491,
+    "name": "Forthcoming Herring",
+    "map": "src/assets/textures/000510.3841783629.png",
+    "claimed": false
+  },
+  {
+    "id": 492,
+    "name": "Passing Sole",
+    "map": "src/assets/textures/000511.1462545198.png",
+    "claimed": false
+  },
+  {
+    "id": 493,
+    "name": "Delicate Tortoise",
+    "map": "src/assets/textures/000512.2852591720.png",
+    "claimed": false
+  },
+  {
+    "id": 494,
+    "name": "Manual Turtle",
+    "map": "src/assets/textures/000513.3512434235.png",
+    "claimed": false
+  },
+  {
+    "id": 495,
+    "name": "Super Guineafowl",
+    "map": "src/assets/textures/000514.2840796608.png",
+    "claimed": false
+  },
+  {
+    "id": 496,
+    "name": "Main Shrew",
+    "map": "src/assets/textures/000515.672655400.png",
+    "claimed": false
+  },
+  {
+    "id": 497,
+    "name": "Gleaming Raven",
+    "map": "src/assets/textures/000516.3723287021.png",
+    "claimed": false
+  },
+  {
+    "id": 498,
+    "name": "Outrageous Sawfish",
+    "map": "src/assets/textures/000517.3896874738.png",
+    "claimed": false
+  },
+  {
+    "id": 499,
+    "name": "Correct Peacock",
+    "map": "src/assets/textures/000518.4237617714.png",
+    "claimed": false
+  },
+  {
+    "id": 500,
+    "name": "Conventional Earthworm",
+    "map": "src/assets/textures/000519.1570022119.png",
+    "claimed": false
+  },
+  {
+    "id": 501,
+    "name": "Local Donkey",
+    "map": "src/assets/textures/000520.1764182857.png",
+    "claimed": false
+  },
+  {
+    "id": 502,
+    "name": "Commercial Vulture",
+    "map": "src/assets/textures/000521.1849451857.png",
+    "claimed": false
+  },
+  {
+    "id": 503,
+    "name": "Screeching Turkey",
+    "map": "src/assets/textures/000522.1578340411.png",
+    "claimed": false
+  },
+  {
+    "id": 504,
+    "name": "Provincial Alligator",
+    "map": "src/assets/textures/000523.3567024045.png",
+    "claimed": false
+  },
+  {
+    "id": 505,
+    "name": "Ideal Haddock",
+    "map": "src/assets/textures/000524.3981862511.png",
+    "claimed": false
+  },
+  {
+    "id": 506,
+    "name": "Zoophagous Aphid",
+    "map": "src/assets/textures/000525.3546595945.png",
+    "claimed": false
+  },
+  {
+    "id": 507,
+    "name": "Influential Skink",
+    "map": "src/assets/textures/000526.2527379991.png",
+    "claimed": false
+  },
+  {
+    "id": 508,
+    "name": "Mere Sparrow",
+    "map": "src/assets/textures/000527.1524445968.png",
+    "claimed": false
+  },
+  {
+    "id": 509,
+    "name": "Irrelevant Bobolink",
+    "map": "src/assets/textures/000528.4149399554.png",
+    "claimed": false
+  },
+  {
+    "id": 510,
+    "name": "Certain Owl",
+    "map": "src/assets/textures/000529.1407313674.png",
+    "claimed": false
+  },
+  {
+    "id": 511,
+    "name": "Old Gazelle",
+    "map": "src/assets/textures/000530.3479047159.png",
+    "claimed": false
+  },
+  {
+    "id": 512,
+    "name": "Dutch Earthworm",
+    "map": "src/assets/textures/000531.748955289.png",
+    "claimed": false
+  },
+  {
+    "id": 513,
+    "name": "Grubby Mastodon",
+    "map": "src/assets/textures/000532.1292699993.png",
+    "claimed": false
+  },
+  {
+    "id": 514,
+    "name": "Fundamental Cod",
+    "map": "src/assets/textures/000533.818026136.png",
+    "claimed": false
+  },
+  {
+    "id": 515,
+    "name": "Defiant Tyrannosaurus",
+    "map": "src/assets/textures/000534.723889513.png",
+    "claimed": false
+  },
+  {
+    "id": 516,
+    "name": "Divine Stoat",
+    "map": "src/assets/textures/000535.3969754211.png",
+    "claimed": false
+  },
+  {
+    "id": 517,
+    "name": "Exclusive Cattle",
+    "map": "src/assets/textures/000536.59798244.png",
+    "claimed": false
+  },
+  {
+    "id": 518,
+    "name": "Rational Chimpanzee",
+    "map": "src/assets/textures/000537.1285718465.png",
+    "claimed": false
+  },
+  {
+    "id": 519,
+    "name": "Rolling Alpaca",
+    "map": "src/assets/textures/000538.1624201157.png",
+    "claimed": false
+  },
+  {
+    "id": 520,
+    "name": "Extended Moose",
+    "map": "src/assets/textures/000539.3540895543.png",
+    "claimed": false
+  },
+  {
+    "id": 521,
+    "name": "Vicious Ant",
+    "map": "src/assets/textures/000540.3914927725.png",
+    "claimed": false
+  },
+  {
+    "id": 522,
+    "name": "Naval Mandrill",
+    "map": "src/assets/textures/000541.723701922.png",
+    "claimed": false
+  },
+  {
+    "id": 523,
+    "name": "Lengthy Krill",
+    "map": "src/assets/textures/000542.731099581.png",
+    "claimed": false
+  },
+  {
+    "id": 524,
+    "name": "Spotless Gibbon",
+    "map": "src/assets/textures/000543.920493148.png",
+    "claimed": false
+  },
+  {
+    "id": 525,
+    "name": "Level Shrew",
+    "map": "src/assets/textures/000544.394030882.png",
+    "claimed": false
+  },
+  {
+    "id": 526,
+    "name": "Coming Booby",
+    "map": "src/assets/textures/000545.2097125242.png",
+    "claimed": false
+  },
+  {
+    "id": 527,
+    "name": "Xerothermic Rook",
+    "map": "src/assets/textures/000546.187873963.png",
+    "claimed": false
+  },
+  {
+    "id": 528,
+    "name": "Liable Ferret",
+    "map": "src/assets/textures/000547.3887909519.png",
+    "claimed": false
+  },
+  {
+    "id": 529,
+    "name": "Shared Pike",
+    "map": "src/assets/textures/000548.2441005388.png",
+    "claimed": false
+  },
+  {
+    "id": 530,
+    "name": "Pleased Goat",
+    "map": "src/assets/textures/000549.3618865911.png",
+    "claimed": false
+  },
+  {
+    "id": 531,
+    "name": "Tight Sailfish",
+    "map": "src/assets/textures/000550.1056580062.png",
+    "claimed": false
+  },
+  {
+    "id": 532,
+    "name": "Frozen Wolverine",
+    "map": "src/assets/textures/000551.1703048912.png",
+    "claimed": false
+  },
+  {
+    "id": 533,
+    "name": "Imaginative Mandrill",
+    "map": "src/assets/textures/000552.204447984.png",
+    "claimed": false
+  },
+  {
+    "id": 534,
+    "name": "Normal Tortoise",
+    "map": "src/assets/textures/000553.3496175132.png",
+    "claimed": false
+  },
+  {
+    "id": 535,
+    "name": "Zygomorphic Antlion",
+    "map": "src/assets/textures/000554.1915901283.png",
+    "claimed": false
+  },
+  {
+    "id": 536,
+    "name": "Zoophagous Cockroach",
+    "map": "src/assets/textures/000555.2818455106.png",
+    "claimed": false
+  },
+  {
+    "id": 537,
+    "name": "Useless Moth",
+    "map": "src/assets/textures/000556.2615358194.png",
+    "claimed": false
+  },
+  {
+    "id": 538,
+    "name": "Moral Bug",
+    "map": "src/assets/textures/000557.864324948.png",
+    "claimed": false
+  },
+  {
+    "id": 539,
+    "name": "Manual Canid",
+    "map": "src/assets/textures/000558.2554118899.png",
+    "claimed": false
+  },
+  {
+    "id": 540,
+    "name": "Neutral Coyote",
+    "map": "src/assets/textures/000559.2793943895.png",
+    "claimed": false
+  },
+  {
+    "id": 541,
+    "name": "Far Platypus",
+    "map": "src/assets/textures/000560.2802793884.png",
+    "claimed": false
+  },
+  {
+    "id": 542,
+    "name": "Yawning Mandrill",
+    "map": "src/assets/textures/000561.591765603.png",
+    "claimed": false
+  },
+  {
+    "id": 543,
+    "name": "Extraordinary Butterfly",
+    "map": "src/assets/textures/000562.3499463171.png",
+    "claimed": false
+  },
+  {
+    "id": 544,
+    "name": "Wise Bee",
+    "map": "src/assets/textures/000563.3743706198.png",
+    "claimed": false
+  },
+  {
+    "id": 545,
+    "name": "Condemned Crawdad",
+    "map": "src/assets/textures/000564.3597356318.png",
+    "claimed": false
+  },
+  {
+    "id": 546,
+    "name": "Profound Galliform",
+    "map": "src/assets/textures/000565.2724978065.png",
+    "claimed": false
+  },
+  {
+    "id": 547,
+    "name": "Sophisticated Crayfish",
+    "map": "src/assets/textures/000566.125283069.png",
+    "claimed": false
+  },
+  {
+    "id": 548,
+    "name": "Obnoxious Coral",
+    "map": "src/assets/textures/000567.1047473515.png",
+    "claimed": false
+  },
+  {
+    "id": 549,
+    "name": "Parental Caterpillar",
+    "map": "src/assets/textures/000568.4214675205.png",
+    "claimed": false
+  },
+  {
+    "id": 550,
+    "name": "Weary Felidae",
+    "map": "src/assets/textures/000569.2419501487.png",
+    "claimed": false
+  },
+  {
+    "id": 551,
+    "name": "Distant Crocodile",
+    "map": "src/assets/textures/000570.727086879.png",
+    "claimed": false
+  },
+  {
+    "id": 552,
+    "name": "Shared Quelea",
+    "map": "src/assets/textures/000571.471489932.png",
+    "claimed": false
+  },
+  {
+    "id": 553,
+    "name": "Genetic Pike",
+    "map": "src/assets/textures/000572.2074853535.png",
+    "claimed": false
+  },
+  {
+    "id": 554,
+    "name": "Conventional Peafowl",
+    "map": "src/assets/textures/000573.3380372891.png",
+    "claimed": false
+  },
+  {
+    "id": 555,
+    "name": "Eager Leech",
+    "map": "src/assets/textures/000574.1070891557.png",
+    "claimed": false
+  },
+  {
+    "id": 556,
+    "name": "Fierce Chipmunk",
+    "map": "src/assets/textures/000575.4291609846.png",
+    "claimed": false
+  },
+  {
+    "id": 557,
+    "name": "Defensive Prawn",
+    "map": "src/assets/textures/000576.4060147689.png",
+    "claimed": false
+  },
+  {
+    "id": 558,
+    "name": "Obnoxious Emu",
+    "map": "src/assets/textures/000577.3751500637.png",
+    "claimed": false
+  },
+  {
+    "id": 559,
+    "name": "Thick Alpaca",
+    "map": "src/assets/textures/000578.2428074612.png",
+    "claimed": false
+  },
+  {
+    "id": 560,
+    "name": "Deafening Sloth",
+    "map": "src/assets/textures/000579.300772851.png",
+    "claimed": false
+  },
+  {
+    "id": 561,
+    "name": "Immense Asp",
+    "map": "src/assets/textures/000580.1850360019.png",
+    "claimed": false
+  },
+  {
+    "id": 562,
+    "name": "Puny Kite",
+    "map": "src/assets/textures/000581.3303565241.png",
+    "claimed": false
+  },
+  {
+    "id": 563,
+    "name": "Basic Finch",
+    "map": "src/assets/textures/000582.2105244684.png",
+    "claimed": false
+  },
+  {
+    "id": 564,
+    "name": "Powerful Quelea",
+    "map": "src/assets/textures/000583.3104934023.png",
+    "claimed": false
+  },
+  {
+    "id": 565,
+    "name": "Vertical Mouse",
+    "map": "src/assets/textures/000584.1476253068.png",
+    "claimed": false
+  },
+  {
+    "id": 566,
+    "name": "Novel Kingfisher",
+    "map": "src/assets/textures/000585.1879468717.png",
+    "claimed": false
+  },
+  {
+    "id": 567,
+    "name": "Personal Marsupial",
+    "map": "src/assets/textures/000586.2580454662.png",
+    "claimed": false
+  },
+  {
+    "id": 568,
+    "name": "Wasteful Ferret",
+    "map": "src/assets/textures/000587.682880846.png",
+    "claimed": false
+  },
+  {
+    "id": 569,
+    "name": "Solar Crane",
+    "map": "src/assets/textures/000588.2222129102.png",
+    "claimed": false
+  },
+  {
+    "id": 570,
+    "name": "Super Lobster",
+    "map": "src/assets/textures/000589.1691528911.png",
+    "claimed": false
+  },
+  {
+    "id": 571,
+    "name": "Asleep Chinchilla",
+    "map": "src/assets/textures/000590.2082826013.png",
+    "claimed": false
+  },
+  {
+    "id": 572,
+    "name": "Skinny Chickadee",
+    "map": "src/assets/textures/000591.3757173783.png",
+    "claimed": false
+  },
+  {
+    "id": 573,
+    "name": "Substantial Marmot",
+    "map": "src/assets/textures/000592.4094115657.png",
+    "claimed": false
+  },
+  {
+    "id": 574,
+    "name": "Harsh Whale",
+    "map": "src/assets/textures/000593.442251684.png",
+    "claimed": false
+  },
+  {
+    "id": 575,
+    "name": "Wild Impala",
+    "map": "src/assets/textures/000594.3827659009.png",
+    "claimed": false
+  },
+  {
+    "id": 576,
+    "name": "External Falcon",
+    "map": "src/assets/textures/000595.4129483343.png",
+    "claimed": false
+  },
+  {
+    "id": 577,
+    "name": "Rainy Cat",
+    "map": "src/assets/textures/000596.3073872020.png",
+    "claimed": false
+  },
+  {
+    "id": 578,
+    "name": "Inland Parrotfish",
+    "map": "src/assets/textures/000597.589674905.png",
+    "claimed": false
+  },
+  {
+    "id": 579,
+    "name": "Icy Swordtail",
+    "map": "src/assets/textures/000598.780361438.png",
+    "claimed": false
+  },
+  {
+    "id": 580,
+    "name": "Bright Hippopotamus",
+    "map": "src/assets/textures/000599.3076584293.png",
+    "claimed": false
+  },
+  {
+    "id": 581,
+    "name": "Extreme Marmot",
+    "map": "src/assets/textures/000600.3058313055.png",
+    "claimed": false
+  },
+  {
+    "id": 582,
+    "name": "Prominent Leopard",
+    "map": "src/assets/textures/000601.3431452265.png",
+    "claimed": false
+  },
+  {
+    "id": 583,
+    "name": "Painful Xerinae",
+    "map": "src/assets/textures/000602.1736311052.png",
+    "claimed": false
+  },
+  {
+    "id": 584,
+    "name": "Underground Porcupine",
+    "map": "src/assets/textures/000603.3184574555.png",
+    "claimed": false
+  },
+  {
+    "id": 585,
+    "name": "Fond Buzzard",
+    "map": "src/assets/textures/000604.179002106.png",
+    "claimed": false
+  },
+  {
+    "id": 586,
+    "name": "Stale Takin",
+    "map": "src/assets/textures/000605.2234659156.png",
+    "claimed": false
+  },
+  {
+    "id": 587,
+    "name": "Sour Rhinoceros",
+    "map": "src/assets/textures/000606.4289522733.png",
+    "claimed": false
+  },
+  {
+    "id": 588,
+    "name": "Professional Puma",
+    "map": "src/assets/textures/000607.231322718.png",
+    "claimed": false
+  },
+  {
+    "id": 589,
+    "name": "Rational Albatross",
+    "map": "src/assets/textures/000608.723820220.png",
+    "claimed": false
+  },
+  {
+    "id": 590,
+    "name": "Colossal Clam",
+    "map": "src/assets/textures/000609.1412645515.png",
+    "claimed": false
+  },
+  {
+    "id": 591,
+    "name": "Successive Impala",
+    "map": "src/assets/textures/000610.2427931349.png",
+    "claimed": false
+  },
+  {
+    "id": 592,
+    "name": "Combined Mollusk",
+    "map": "src/assets/textures/000611.647270839.png",
+    "claimed": false
+  },
+  {
+    "id": 593,
+    "name": "Lonely Falcon",
+    "map": "src/assets/textures/000612.3074367751.png",
+    "claimed": false
+  },
+  {
+    "id": 594,
+    "name": "Repulsive Cephalopod",
+    "map": "src/assets/textures/000613.1838981284.png",
+    "claimed": false
+  },
+  {
+    "id": 595,
+    "name": "Artificial Manatee",
+    "map": "src/assets/textures/000614.2249851002.png",
+    "claimed": false
+  },
+  {
+    "id": 596,
+    "name": "Acceptable Antelope",
+    "map": "src/assets/textures/000615.4127436639.png",
+    "claimed": false
+  },
+  {
+    "id": 597,
+    "name": "Blonde Rooster",
+    "map": "src/assets/textures/000616.3728347191.png",
+    "claimed": false
+  },
+  {
+    "id": 598,
+    "name": "Sensible Cricket",
+    "map": "src/assets/textures/000617.950415270.png",
+    "claimed": false
+  },
+  {
+    "id": 599,
+    "name": "Similar Sailfish",
+    "map": "src/assets/textures/000618.1048490435.png",
+    "claimed": false
+  },
+  {
+    "id": 600,
+    "name": "Magic Bedbug",
+    "map": "src/assets/textures/000619.544356011.png",
+    "claimed": false
+  },
+  {
+    "id": 601,
+    "name": "Visible Ant",
+    "map": "src/assets/textures/000620.3516684150.png",
+    "claimed": false
+  },
+  {
+    "id": 602,
+    "name": "Appropriate Boar",
+    "map": "src/assets/textures/000621.3172852101.png",
+    "claimed": false
+  },
+  {
+    "id": 603,
+    "name": "Juicy Cobra",
+    "map": "src/assets/textures/000622.2563453757.png",
+    "claimed": false
+  },
+  {
+    "id": 604,
+    "name": "Solar Flyingfish",
+    "map": "src/assets/textures/000623.2296862244.png",
+    "claimed": false
+  },
+  {
+    "id": 605,
+    "name": "Christian Crayfish",
+    "map": "src/assets/textures/000624.2485221004.png",
+    "claimed": false
+  },
+  {
+    "id": 606,
+    "name": "Weekly Anglerfish",
+    "map": "src/assets/textures/000625.3059656062.png",
+    "claimed": false
+  },
+  {
+    "id": 607,
+    "name": "Cruel Lion",
+    "map": "src/assets/textures/000626.777466563.png",
+    "claimed": false
+  },
+  {
+    "id": 608,
+    "name": "Boiling Prawn",
+    "map": "src/assets/textures/000627.3491388609.png",
+    "claimed": false
+  },
+  {
+    "id": 609,
+    "name": "Objective Hummingbird",
+    "map": "src/assets/textures/000628.4175076811.png",
+    "claimed": false
+  },
+  {
+    "id": 610,
+    "name": "Productive Catfish",
+    "map": "src/assets/textures/000629.2363646341.png",
+    "claimed": false
+  },
+  {
+    "id": 611,
+    "name": "Accused Damselfly",
+    "map": "src/assets/textures/000630.1343824655.png",
+    "claimed": false
+  },
+  {
+    "id": 612,
+    "name": "Zestful Wombat",
+    "map": "src/assets/textures/000631.3917393174.png",
+    "claimed": false
+  },
+  {
+    "id": 613,
+    "name": "Ambitious Jaguar",
+    "map": "src/assets/textures/000632.3231454025.png",
+    "claimed": false
+  },
+  {
+    "id": 614,
+    "name": "Quiet Alpaca",
+    "map": "src/assets/textures/000633.91259836.png",
+    "claimed": false
+  },
+  {
+    "id": 615,
+    "name": "Noble Moose",
+    "map": "src/assets/textures/000634.4084960223.png",
+    "claimed": false
+  },
+  {
+    "id": 616,
+    "name": "Reduced Gibbon",
+    "map": "src/assets/textures/000635.2590588802.png",
+    "claimed": false
+  },
+  {
+    "id": 617,
+    "name": "Free Iguana",
+    "map": "src/assets/textures/000636.1887373245.png",
+    "claimed": false
+  },
+  {
+    "id": 618,
+    "name": "Male Pigeon",
+    "map": "src/assets/textures/000637.1510734386.png",
+    "claimed": false
+  },
+  {
+    "id": 619,
+    "name": "Keen Turtle",
+    "map": "src/assets/textures/000638.3196533024.png",
+    "claimed": false
+  },
+  {
+    "id": 620,
+    "name": "Striped Llama",
+    "map": "src/assets/textures/000639.840140530.png",
+    "claimed": false
+  },
+  {
+    "id": 621,
+    "name": "Comparative Salmon",
+    "map": "src/assets/textures/000640.702481483.png",
+    "claimed": false
+  },
+  {
+    "id": 622,
+    "name": "Zealous Junglefowl",
+    "map": "src/assets/textures/000641.1635378045.png",
+    "claimed": false
+  },
+  {
+    "id": 623,
+    "name": "Progressive Hyena",
+    "map": "src/assets/textures/000642.58734242.png",
+    "claimed": false
+  },
+  {
+    "id": 624,
+    "name": "Practical Moose",
+    "map": "src/assets/textures/000643.1896718690.png",
+    "claimed": false
+  },
+  {
+    "id": 625,
+    "name": "Slight Raven",
+    "map": "src/assets/textures/000644.2362886644.png",
+    "claimed": false
+  },
+  {
+    "id": 626,
+    "name": "Fun Bison",
+    "map": "src/assets/textures/000645.557583152.png",
+    "claimed": false
+  },
+  {
+    "id": 627,
+    "name": "Orthodox Newt",
+    "map": "src/assets/textures/000646.447258493.png",
+    "claimed": false
+  },
+  {
+    "id": 628,
+    "name": "Underground Cicada",
+    "map": "src/assets/textures/000647.2126472088.png",
+    "claimed": false
+  },
+  {
+    "id": 629,
+    "name": "Internal Seahorse",
+    "map": "src/assets/textures/000648.2037305123.png",
+    "claimed": false
+  },
+  {
+    "id": 630,
+    "name": "Interior Partridge",
+    "map": "src/assets/textures/000649.901046474.png",
+    "claimed": false
+  },
+  {
+    "id": 631,
+    "name": "Global Shrimp",
+    "map": "src/assets/textures/000650.3837395932.png",
+    "claimed": false
+  },
+  {
+    "id": 632,
+    "name": "Voluntary Walrus",
+    "map": "src/assets/textures/000651.2988112259.png",
+    "claimed": false
+  },
+  {
+    "id": 633,
+    "name": "Ytterbic Wildcat",
+    "map": "src/assets/textures/000652.3430042167.png",
+    "claimed": false
+  },
+  {
+    "id": 634,
+    "name": "Abundant Haddock",
+    "map": "src/assets/textures/000653.2368008706.png",
+    "claimed": false
+  },
+  {
+    "id": 635,
+    "name": "Exclusive Parrot",
+    "map": "src/assets/textures/000654.3281821374.png",
+    "claimed": false
+  },
+  {
+    "id": 636,
+    "name": "Fine Clam",
+    "map": "src/assets/textures/000655.2518797117.png",
+    "claimed": false
+  },
+  {
+    "id": 637,
+    "name": "Democratic Guppy",
+    "map": "src/assets/textures/000656.2262308763.png",
+    "claimed": false
+  },
+  {
+    "id": 638,
+    "name": "Mass Jaguar",
+    "map": "src/assets/textures/000657.3945189328.png",
+    "claimed": false
+  },
+  {
+    "id": 639,
+    "name": "Organic Seahorse",
+    "map": "src/assets/textures/000658.3702885254.png",
+    "claimed": false
+  }
+]

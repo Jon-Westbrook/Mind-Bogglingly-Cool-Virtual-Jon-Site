@@ -1,0 +1,21 @@
+.app {
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  display: flex;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  overscroll-behavior: contain;
+  // .scene {
+  //   position: absolute !important;
+  //   top: 0;
+  //   left: 200px;
+  //   width: 500px !important;
+  //   height: 500px !important;
+  //   outline: 2px solid black;
+  // }
+}
