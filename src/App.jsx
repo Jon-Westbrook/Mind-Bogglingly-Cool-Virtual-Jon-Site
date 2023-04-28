@@ -2,7 +2,7 @@ import React from 'react';
 import { BrowserRouter as Router } from 'react-router-dom';
 import { Canvas, useFrame } from '@react-three/fiber';
 import { AnimationMixer } from 'three';
-import { OrbitControls, useGLTF, Environment } from '@react-three/drei';
+import { OrbitControls, useGLTF, Environment, PerspectiveCamera } from '@react-three/drei';
 import './App.scss';
 import model from './assets/model2.glb';
 import envMap from './assets/blue_photo_studio_2k.hdr';
@@ -24,11 +24,21 @@ const App = () => (
       <Canvas
         shadows={{ type: 'PCFShadowMap' }}
       >
-        <OrbitControls />
+        <PerspectiveCamera
+          makeDefault
+          far={2000}
+          near={1}
+          position={[0, 1, 10]}
+        />
+        <OrbitControls
+          enablePan={false}
+          maxPolarAngle={(Math.PI * 0.5) - 0.2}
+          minPolarAngle={(Math.PI * 0.5) - 0.5}
+        />
         <pointLight intensity={1} position={[2, 10, 20]} />
-        <Environment files={envMap} exposure={0.5} ground={{ height: 3, radius: 6 }} />
+        <Environment files={envMap} exposure={0.5} ground={{ height: 3, radius: 8 }} />
 
-        <group position={[0, -1, 0]} scale={2}>
+        <group position={[0, 0, 0]} scale={2}>
           <Model />
         </group>
       </Canvas>
