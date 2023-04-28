@@ -28,25 +28,20 @@ const App = () => {
         <Canvas
           shadows={{ type: 'PCFShadowMap' }}
         >
-          <group
-            useRef={camTarget}
-            position={[0, 0, 0]}
-          >
-            <PerspectiveCamera
-              makeDefault
-              far={1100}
-              near={0.1}
-              position={[0, 0, 5]}
-            />
-          </group>
+
+          <PerspectiveCamera
+            makeDefault
+            far={1100}
+            near={0.1}
+            position={[0, 1, 5]}
+          />
           <OrbitControls
             enablePan={false}
             maxPolarAngle={Math.PI * 0.5}
             minPolarAngle={Math.PI * 0.5}
-            minDistance={1}
+            minDistance={0.25}
             maxDistance={2.5}
             target-y={1}
-            // target={camTarget}
           />
           <EffectComposer>
             <DepthOfField focusDistance={5} focalLength={10} bokehScale={3} height={400} />
