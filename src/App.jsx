@@ -36,7 +36,7 @@ const App = () => (
           minPolarAngle={(Math.PI * 0.5) - 0.5}
         />
         <pointLight intensity={1} position={[2, 10, 20]} />
-        <Environment files={envMap} exposure={0.5} ground={{ height: 3, radius: 8 }} />
+        <Environment files={envMap} exposure={5} ground={{ height: 3, radius: 8 }} />
 
         <group position={[0, 0, 0]} scale={2}>
           <Model />
