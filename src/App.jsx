@@ -1,7 +1,7 @@
-import React, { useRef } from 'react';
+import React, { useRef, useState } from 'react';
 import { BrowserRouter as Router } from 'react-router-dom';
 import { Canvas, useFrame } from '@react-three/fiber';
-import { AnimationMixer, BoxGeometry, MeshNormalMaterial } from 'three';
+import { AnimationMixer } from 'three';
 import { OrbitControls, useGLTF, Environment, PerspectiveCamera } from '@react-three/drei';
 import { EffectComposer, DepthOfField, Bloom, Noise, Vignette } from '@react-three/postprocessing';
 import './App.scss';
@@ -22,14 +22,60 @@ function Model(props) {
 }
 
 const pages = [
-  'About',
-  'Experience',
-  'Work',
-  'Contact',
+  {
+    name: 'Home',
+    camPostion: [0, 1, 3],
+    camTarget: [0, 1, 0],
+    camRotate: true,
+  }, {
+    name: 'About',
+    camPostion: [-0.2, 1.6, 0.1],
+    camTarget: [0, 1.7, 0.1],
+    camRotate: false,
+  }, {
+    name: 'Experience',
+    camPostion: [0.3, 0.75, -0.2],
+    camTarget: [0.3, 0.75, 0.5],
+    camRotate: false,
+  }, {
+    name: 'Work',
+    camPostion: [0, 1.2, 1],
+    camTarget: [0.1, 1, 0.5],
+    camRotate: false,
+  }, {
+    name: 'Contact',
+    camPostion: [0, 1, 0],
+    camTarget: [0.5, 2, 0.5],
+    camRotate: false,
+  }, {
+    name: 'Butt Shot!',
+    camPostion: [0, 1, -1],
+    camTarget: [0.1, 1, 0],
+    camRotate: false,
+  }, {
+    name: 'Left Cheek 🍑',
+    camPostion: [0.3, 0.7, -0.3],
+    camTarget: [-0.1, 1, 0],
+    camRotate: false,
+  },
 ];
 
+
 const App = () => {
-  const camTarget = useRef();
+  const [currentPage, setCurrentPage] = useState(pages[0].name);
+  const [cameraPosition, setCameraPosition] = useState([0, 1, 3]);
+  const [cameraTarget, setCameraTarget] = useState([0, 1, 0]);
+  const [cameraRotate, setCameraRotate] = useState(true);
+
+  const navigate = ({ target }) => {
+    const page = pages.find(({ name }) => name === target.innerText);
+    const { camPostion, camTarget, camRotate } = page;
+
+    setCurrentPage(target.innerText);
+    setCameraPosition(camPostion);
+    setCameraTarget(camTarget);
+    setCameraRotate(camRotate);
+  };
 
   return (
     <Router>
@@ -41,16 +87,17 @@ const App = () => {
             makeDefault
             far={1100}
             near={0.1}
-            position={[0, 1, 2.5]}
+            position={cameraPosition}
             frustumCulled
           />
           <OrbitControls
             enablePan={false}
+            enableRotate={cameraRotate}
             maxPolarAngle={Math.PI / 2 + 0.1}
             minPolarAngle={Math.PI / 2 - 0.1}
             minDistance={0.25}
-            maxDistance={2.5}
-            target-y={1}
+            maxDistance={5}
+            target={cameraTarget}
           />
           <EffectComposer>
             {/* <DepthOfField focusDistance={5} focalLength={10} bokehScale={3} height={400} /> */}
@@ -69,6 +116,16 @@ const App = () => {
             </group>
           </EffectComposer>
         </Canvas>
+        <ul className="nav">
+          {
+          pages.map(page => (
+            <li key={page.name}>
+              <button type="button" onClick={navigate}>{page.name}</button>
+            </li>
+          ))
+          }
+        </ul>
+        <h1 className="pageTitle">{currentPage}</h1>
       </div>
     </Router>
   );

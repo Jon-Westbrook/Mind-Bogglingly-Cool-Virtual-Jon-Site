@@ -1,5 +1,13 @@
-.app {
+@font-face {
+  font-family: 'Great Vibes';
+  src: url('./assets/GreatVibes-Regular.ttf');
+}
 
+html, body {
+  font-size: 16px;
+}
+
+.app {
   position: absolute;
   top: 0;
   left: 0;
@@ -18,4 +26,21 @@
   //   height: 500px !important;
   //   outline: 2px solid black;
   // }
+
+  .nav {
+    position: absolute;
+    list-style: none;
+  }
+
+  .pageTitle {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    pointer-events: none;
+    font-family: 'Great Vibes';
+    font-size: 3rem;
+    color: white;
+    text-shadow: 2px 4px 1px rgba(0, 0, 0, .3);
+  }
 }
