@@ -21,8 +21,8 @@
     "camRotate": false
   }, {
     "name": "Contact",
-    "camPostion": [0, 1, 0],
-    "camTarget": [0.5, 2, 0.5],
+    "camPostion": [0, 3, -1],
+    "camTarget": [0, 1, 0],
     "camRotate": false
   }, {
     "name": "Butt Shot!",
