@@ -1,12 +1,13 @@
 import React, { useRef, useState } from 'react';
 import { BrowserRouter as Router } from 'react-router-dom';
 import { Canvas, useFrame } from '@react-three/fiber';
-import { AnimationMixer } from 'three';
+import { AnimationMixer, MathUtils, Vector3 } from 'three';
 import { OrbitControls, useGLTF, Environment, PerspectiveCamera } from '@react-three/drei';
 import { EffectComposer, DepthOfField, Bloom, Noise, Vignette } from '@react-three/postprocessing';
 import './App.scss';
 import model from './assets/model3.glb';
 import envMap from './assets/modern_buildings_2k.hdr';
+import pages from './assets/pages.json';
 
 function Model(props) {
   const { scale } = props;
@@ -21,51 +22,33 @@ function Model(props) {
   return <primitive object={scene} position={[0, 0, 0]} scale={scale} />;
 }
 
-const pages = [
-  {
-    name: 'Home',
-    camPostion: [0, 1, 3],
-    camTarget: [0, 1, 0],
-    camRotate: true,
-  }, {
-    name: 'About',
-    camPostion: [-0.2, 1.6, 0.1],
-    camTarget: [0, 1.7, 0.1],
-    camRotate: false,
-  }, {
-    name: 'Experience',
-    camPostion: [0.3, 0.75, -0.2],
-    camTarget: [0.3, 0.75, 0.5],
-    camRotate: false,
-  }, {
-    name: 'Work',
-    camPostion: [0, 1.2, 1],
-    camTarget: [0.1, 1, 0.5],
-    camRotate: false,
-  }, {
-    name: 'Contact',
-    camPostion: [0, 1, 0],
-    camTarget: [0.5, 2, 0.5],
-    camRotate: false,
-  }, {
-    name: 'Butt Shot!',
-    camPostion: [0, 1, -1],
-    camTarget: [0.1, 1, 0],
-    camRotate: false,
-  }, {
-    name: 'Left Cheek 🍑',
-    camPostion: [0.3, 0.7, -0.3],
-    camTarget: [-0.1, 1, 0],
-    camRotate: false,
-  },
-];
+// let lerpedCameraPosition = new Vector3();
 
 
 const App = () => {
+  const controlsRef = useRef();
   const [currentPage, setCurrentPage] = useState(pages[0].name);
   const [cameraPosition, setCameraPosition] = useState([0, 1, 3]);
+  const [lerpedCameraPosition, setLerpedCameraPosition] = useState(cameraPosition);
   const [cameraTarget, setCameraTarget] = useState([0, 1, 0]);
+  const [lerpedCameraTarget, setLerpedCameraTarget] = useState(cameraTarget);
   const [cameraRotate, setCameraRotate] = useState(true);
+
+
+  function CamController() {
+    useFrame((state, delta) => {
+      const camX = MathUtils.damp(cameraPosition[0], state.camera.position.x, 500, delta);
+      const camY = MathUtils.damp(cameraPosition[1], state.camera.position.y, 500, delta);
+      const camZ = MathUtils.damp(cameraPosition[2], state.camera.position.z, 500, delta);
+      const tarX = MathUtils.damp(cameraTarget[0], controlsRef.current.target.x, 500, delta);
+      const tarY = MathUtils.damp(cameraTarget[1], controlsRef.current.target.y, 500, delta);
+      const tarZ = MathUtils.damp(cameraTarget[2], controlsRef.current.target.z, 500, delta);
+
+      setLerpedCameraPosition([camX, camY, camZ]);
+      setLerpedCameraTarget([tarX, tarY, tarZ]);
+    });
+  }
+
 
   const navigate = ({ target }) => {
     const page = pages.find(({ name }) => name === target.innerText);
@@ -74,8 +57,11 @@ const App = () => {
     setCurrentPage(target.innerText);
     setCameraPosition(camPostion);
     setCameraTarget(camTarget);
+    // setLerpedCameraTarget(camTarget);
     setCameraRotate(camRotate);
   };
+
+  // const CamController = camController();
 
   return (
     <Router>
@@ -87,17 +73,18 @@ const App = () => {
             makeDefault
             far={1100}
             near={0.1}
-            position={cameraPosition}
+            position={lerpedCameraPosition}
             frustumCulled
           />
           <OrbitControls
+            ref={controlsRef}
             enablePan={false}
             enableRotate={cameraRotate}
             maxPolarAngle={Math.PI / 2 + 0.1}
             minPolarAngle={Math.PI / 2 - 0.1}
             minDistance={0.25}
             maxDistance={5}
-            target={cameraTarget}
+            target={lerpedCameraTarget}
           />
           <EffectComposer>
             {/* <DepthOfField focusDistance={5} focalLength={10} bokehScale={3} height={400} /> */}
@@ -113,6 +100,8 @@ const App = () => {
             />
             <group position={[0, 0, 0]} scale={0.5}>
               <Model scale={2} />
+              <CamController />
+
             </group>
           </EffectComposer>
         </Canvas>
