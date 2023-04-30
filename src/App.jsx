@@ -30,12 +30,12 @@ const App = () => {
   const cam = useRef();
   const { animatedPosition } = useSpring({
     animatedPosition: pages.find(p => p.name === currentPage).camPostion,
-    config: config.wobbly,
+    config: config.default,
   });
 
   const { animatedTarget } = useSpring({
     animatedTarget: pages.find(p => p.name === currentPage).camTarget,
-    config: config.wobbly,
+    config: config.default,
     onChange: (e) => {
       const pos = new Vector3(e.value.animatedTarget[0], e.value.animatedTarget[1], e.value.animatedTarget[2]);
       cam.current.lookAt(pos);
