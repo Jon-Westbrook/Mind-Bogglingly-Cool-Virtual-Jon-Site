@@ -51,17 +51,17 @@ const App = () => {
     <Router>
       <div className="app">
         <Canvas shadows={{ type: 'PCFShadowMap' }}>
-          <animated.group
-            position={animatedPosition}
-          >
+          <animated.group position={animatedPosition}>
             <PerspectiveCamera
               makeDefault
               far={1100}
               near={0.1}
               ref={cam}
             />
-            {/* <OrbitControls
-              ref={controlsRef}
+          </animated.group>
+
+          {/* <OrbitControls
+              // ref={controlsRef}
               enablePan={false}
             // enableRotate={cameraRotate}
             // maxPolarAngle={Math.PI / 2 + 0.1}
@@ -69,8 +69,6 @@ const App = () => {
               minDistance={0.25}
               maxDistance={5}
             /> */}
-          </animated.group>
-
           <EffectComposer>
             <ChromaticAberration
               offset={[0.005, 0.001]}
@@ -101,7 +99,6 @@ const App = () => {
           }
         </ul>
         <h1 className="pageTitle">{currentPage}</h1>
-        {/* <button className="debug" onClick={() => { setActive(!active); }}>debug</button> */}
       </div>
     </Router>
   );
