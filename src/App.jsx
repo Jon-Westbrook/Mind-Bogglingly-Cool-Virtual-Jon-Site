@@ -2,15 +2,15 @@ import React, { useRef, useState } from 'react';
 import { BrowserRouter as Router } from 'react-router-dom';
 import { Canvas, useFrame } from '@react-three/fiber';
 import { AnimationMixer, MathUtils, Vector3 } from 'three';
-import { OrbitControls, useGLTF, Environment, PerspectiveCamera, CameraShake } from '@react-three/drei';
-import { EffectComposer, DepthOfField, Bloom, Noise, Vignette, ChromaticAberration, Depth } from '@react-three/postprocessing';
+import { OrbitControls, useGLTF, Environment, PerspectiveCamera } from '@react-three/drei';
+import { EffectComposer, DepthOfField, Bloom, Noise, Vignette, ChromaticAberration } from '@react-three/postprocessing';
+import { useSpring, animated, config } from '@react-spring/three';
 import './App.scss';
 import model from './assets/model4.glb';
 import envMap from './assets/modern_buildings_2k.hdr';
 import pages from './assets/pages.json';
 
 function Model(props) {
-  const { scale } = props;
   let mixer = null;
   const { scene, animations } = useGLTF(model);
   scene.traverse((obj) => { obj.frustumCulled = false; });
@@ -19,76 +19,58 @@ function Model(props) {
   useFrame((state, delta) => {
     mixer.update(delta);
   });
-  return <primitive object={scene} position={[0, 0, 0]} scale={scale} />;
+  return (
+    <primitive object={scene} />
+  );
 }
 
-// let lerpedCameraPosition = new Vector3();
-
-
 const App = () => {
-  const controlsRef = useRef();
   const [currentPage, setCurrentPage] = useState(pages[0].name);
-  const [cameraPosition, setCameraPosition] = useState([0, 1, 3]);
-  const [lerpedCameraPosition, setLerpedCameraPosition] = useState(cameraPosition);
-  const [cameraTarget, setCameraTarget] = useState([0, 1, 0]);
-  // const [lerpedCameraTarget, setLerpedCameraTarget] = useState(cameraTarget);
-  // const [cameraRotate, setCameraRotate] = useState(true);
-  // const [camMoving, setCamMoving] = useState(false);
-  const pos = new Vector3();
-  const tgt = new Vector3();
 
-  function CamController() {
-    useFrame((state, delta) => {
-      // if (camMoving) {
-      const posX = MathUtils.damp(cameraPosition[0], state.camera.position.x, 400, delta);
-      const pozY = MathUtils.damp(cameraPosition[1], state.camera.position.y, 400, delta);
-      const posZ = MathUtils.damp(cameraPosition[2], state.camera.position.z, 400, delta);
-      const tarX = MathUtils.damp(cameraTarget[0], tgt.x, 400, delta);
-      const tarY = MathUtils.damp(cameraTarget[1], tgt.y, 400, delta);
-      const tarZ = MathUtils.damp(cameraTarget[2], tgt.z, 400, delta);
-      // setLerpedCameraPosition([posX, pozY, posZ]);
-      // setLerpedCameraTarget([tarX, tarY, tarZ]);
-      pos.set(posX, pozY, posZ);
-      tgt.set(tarX, tarY, tarZ);
-      state.camera.position.copy(pos);
-      state.camera.lookAt(tgt);
-      // }
-    });
-  }
+  const cam = useRef();
+  const { animatedPosition } = useSpring({
+    animatedPosition: pages.find(p => p.name === currentPage).camPostion,
+    config: config.wobbly,
+  });
 
+  const { animatedTarget } = useSpring({
+    animatedTarget: pages.find(p => p.name === currentPage).camTarget,
+    config: config.wobbly,
+    onChange: (e) => {
+      const pos = new Vector3(e.value.animatedTarget[0], e.value.animatedTarget[1], e.value.animatedTarget[2]);
+      cam.current.lookAt(pos);
+    },
+  });
 
   const navigate = ({ target }) => {
     const page = pages.find(({ name }) => name === target.innerText);
-    const { camPostion, camTarget, camRotate } = page;
     setCurrentPage(target.innerText);
-    setCameraPosition(camPostion);
-    setCameraTarget(camTarget);
   };
-
-  // const CamController = camController();
 
   return (
     <Router>
       <div className="app">
-        <Canvas
-          shadows={{ type: 'PCFShadowMap' }}
-        >
-          <PerspectiveCamera
-            makeDefault
-            far={1100}
-            near={0.1}
-            // position={lerpedCameraPosition}
-          />
-          <OrbitControls
-            ref={controlsRef}
-            enablePan={false}
+        <Canvas shadows={{ type: 'PCFShadowMap' }}>
+          <animated.group
+            position={animatedPosition}
+          >
+            <PerspectiveCamera
+              makeDefault
+              far={1100}
+              near={0.1}
+              ref={cam}
+            />
+            {/* <OrbitControls
+              ref={controlsRef}
+              enablePan={false}
             // enableRotate={cameraRotate}
             // maxPolarAngle={Math.PI / 2 + 0.1}
             // minPolarAngle={Math.PI / 2 - 0.1}
-            minDistance={0.25}
-            maxDistance={5}
-            // target={lerpedCameraTarget}
-          />
+              minDistance={0.25}
+              maxDistance={5}
+            /> */}
+          </animated.group>
+
           <EffectComposer>
             <ChromaticAberration
               offset={[0.005, 0.001]}
@@ -104,10 +86,8 @@ const App = () => {
               exposure={5}
               ground={{ height: 1, radius: 8 }}
             />
-            <group position={[0, 0, 0]} scale={0.5}>
-              <Model scale={2} />
-              <CamController />
-
+            <group>
+              <Model />
             </group>
           </EffectComposer>
         </Canvas>
@@ -121,6 +101,7 @@ const App = () => {
           }
         </ul>
         <h1 className="pageTitle">{currentPage}</h1>
+        {/* <button className="debug" onClick={() => { setActive(!active); }}>debug</button> */}
       </div>
     </Router>
   );

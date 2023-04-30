@@ -7,7 +7,7 @@
     "build": "vite build"
   },
   "dependencies": {
-    "@react-spring/three": "^9.5.5",
+    "@react-spring/three": "^9.7.2",
     "@react-three/drei": "^9.66.1",
     "@react-three/fiber": "^8.8.10",
     "@react-three/postprocessing": "^2.8.3",
