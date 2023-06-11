@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { BrowserRouter as Router } from 'react-router-dom';
 import { Canvas, useFrame, useThree } from '@react-three/fiber';
-import { AnimationMixer, BoxGeometry, MeshStandardMaterial, Object3D, Vector3, SRGBColorSpace } from 'three';
+import { AnimationMixer, BoxGeometry, MeshPhysicalMaterial, MeshStandardMaterial, Object3D, Vector3, SRGBColorSpace, PlaneGeometry } from 'three';
 import { OrbitControls, useGLTF, Environment, PerspectiveCamera } from '@react-three/drei';
 import { EffectComposer, DepthOfField, Bloom, Noise, Vignette, ChromaticAberration } from '@react-three/postprocessing';
 import { useSpring, animated, config } from '@react-spring/three';
@@ -10,59 +10,65 @@ import model from './assets/model6.glb';
 import envMap from './assets/modern_buildings_2k.hdr';
 import pages from './assets/pages.json';
 
-let _lightTarget;
 
-// const vec = [0, 1, 0];
-const obj = new Object3D({ position: new Vector3(10, 0, 0) });
+function Model() {
+  // console.log(props.scene);
+  const state = useThree();
 
-// setInterval(() => {
-//   obj.position.x += 0.1;
-// }, 100);
-
-function Model(props) {
   let mixer = null;
   const { scene, animations } = useGLTF(model);
   scene.traverse((obj) => {
     if (obj.isMesh) {
       obj.castShadow = true;
       obj.receiveShadow = true;
-      // console.log(env, obj.material);
+      obj.material.envMap = state.scene.environment;
+      obj.material.emissiveIntensity = 3;
+      obj.material.needsUpdate = true;
+      // console.log(obj.material);
+      // console.log(state.scene.environment);
+    }
+    if (obj.name === 'Wolf3D_Glasses') {
+      console.log(obj);
+      const newMat = new MeshPhysicalMaterial();
+      newMat.map = obj.material.map;
+      newMat.envMap = state.scene.environment;
+      newMat.reflectivity = 0.75;
+      newMat.transmission = 0.9;
+      newMat.metalness = 0.25;
+      newMat.roughness = 0.1;
+      newMat.thickness = 0.01;
+      obj.material = newMat;
     }
     // obj.frustumCulled = false;
   });
   mixer = new AnimationMixer(scene);
   mixer.clipAction(animations[0]).play();
   useFrame((state, delta) => {
-    // mixer.update(delta);
+    mixer.update(delta);
   });
   return (
     <primitive object={scene} />
   );
 }
 
+
 const App = () => {
   const [currentPage, setCurrentPage] = useState(pages[0].name);
 
   const cameraRef = useRef();
   const controlsRef = useRef();
-  const lt = useRef();
-  const dl = useRef();
-  const [vec, setVec] = useState([0, 3, 0]);
-
-  // console.log(dl);
-  // const env = useRef();
-  // const pointLight = useRef();
+  const canvasRef = useRef();
 
   const { animatedPosition } = useSpring({
     animatedPosition: pages.find(p => p.name === currentPage).camPostion,
-    config: config.default,
+    config: config.slow,
     onChange: (e) => {
       cameraRef.current.position.set(e.value.animatedPosition[0], e.value.animatedPosition[1], e.value.animatedPosition[2]);
     },
   });
   const { animatedTarget } = useSpring({
     animatedTarget: pages.find(p => p.name === currentPage).camTarget,
-    config: config.default,
+    config: config.slow,
     onChange: (e) => {
       controlsRef.current.target.set(e.value.animatedTarget[0], e.value.animatedTarget[1], e.value.animatedTarget[2]);
     },
@@ -73,29 +79,20 @@ const App = () => {
     setCurrentPage(target.innerText);
   };
 
-  const changeLight = () => {
-    setVec([(Math.random() * 4) - 2, (Math.random() * 4) - 2, (Math.random() * 4) - 2]);
-  };
-
-  // useEffect(() => {
-  //   setTimeout(() => {
-  //     navigate({ target: { innerText: 'Home' } });
-  //   }, 1000);
-  // }, []);
-
   return (
     <Router>
       <div className="app">
         <Canvas
-          shadows={{ type: 'PCFSoftShadowMap' }}
-          dpr={0.75}
+          shadows={{ type: 'VSMShadowMap' }}
+          dpr={0.5}
+          ref={canvasRef}
           // gl-outputColorSpace={SRGBColorSpace}
         >
           <animated.group>
             <PerspectiveCamera
               makeDefault
               far={1100}
-              near={0.1}
+              near={0.01}
               fov={20}
               ref={cameraRef}
             />
@@ -108,32 +105,23 @@ const App = () => {
           />
           <EffectComposer>
             {/* <ChromaticAberration offset={[0.0025, 0.001]} /> */}
-            <DepthOfField focusDistance={0.1} focalLength={1} bokehScale={20} height={400} />
-            <Bloom luminanceThreshold={0.7} luminanceSmoothing={0.9} height={300} />
+            {/* <DepthOfField focusDistance={0.09} focalLength={0.3} bokehScale={4} height={1000} /> */}
+            {/* <Bloom luminanceThreshold={0.7} luminanceSmoothing={0.9} height={300} /> */}
             {/* <Noise opacity={1} intensity={200} /> */}
-            <Vignette eskil={false} offset={0} darkness={0.5} />
+            {/* <Vignette eskil={false} offset={0} darkness={0.5} /> */}
             <directionalLight
-              intensity={4}
-              // distance={2}
+              intensity={2}
               castShadow
-              shadow-mapSize={1024 * 8}
-              shadow-bias={-0.00001}
-              // shadow-radius={0.9}
+              shadow-mapSize={1024 * 12}
+              shadow-bias={-0.000004}
+              shadow-radius={5}
+              shadow-blurSamples={205}
               position={[1, 2, 1]}
-              target-position={vec}
-              // target={obj}
-              // target={lt.current}
-              // ref={dl}
+              target-position={[0, 20, 0]}
+
             />
-            {/* <pointLight
-              intensity={1}
-              castShadow
-              distance={100}
-              postion={[2, 1, 1]}
-              // target={obj}
-            /> */}
-            {/* <pointLightHelper pointLight={pointLight.current} /> */}
             <Environment
+              // ref={envRef}
               files={envMap}
               background
               // blur={0.08}
@@ -143,19 +131,21 @@ const App = () => {
             />
             <group>
               <Model />
-              <mesh
+              {/* <mesh
                 geometry={new BoxGeometry(0.75, 0.5, 0.75)}
                 material={new MeshStandardMaterial({ color: 'red' })}
                 castShadow
                 receiveShadow
-              />
+              /> */}
               <mesh
-                geometry={new BoxGeometry(2, 0.05, 2)}
-                material={new MeshStandardMaterial({ color: 'gray' })}
-                position={[0, -0.25, 0]}
+                geometry={new PlaneGeometry(3, 3)}
+                position={[0, 0, 0]}
+                rotation={[-Math.PI / 2, 0, 0]}
                 castShadow
                 receiveShadow
-              />
+              >
+                <shadowMaterial />
+              </mesh>
             </group>
           </EffectComposer>
         </Canvas>
@@ -167,7 +157,7 @@ const App = () => {
             </li>
           ))
           }
-          <button onClick={changeLight}>ChangeLight</button>
+          {/* <button onClick={changeLight}>ChangeLight</button> */}
         </ul>
         <h1 className="pageTitle">{currentPage}</h1>
       </div>

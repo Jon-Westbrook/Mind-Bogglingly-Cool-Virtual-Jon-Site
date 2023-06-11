@@ -1,7 +1,7 @@
 [
   {
     "name": "Home",
-    "camPostion": [0, 1, 3],
+    "camPostion": [0, 1, 5],
     "camTarget": [0, 1, 0]
   }, {
     "name": "About",
@@ -9,7 +9,7 @@
     "camTarget": [0, 1.7, 0.1]
   }, {
     "name": "Experience",
-    "camPostion": [0.3, 0.75, -0.2],
+    "camPostion": [0.3, 0.75, -0.5],
     "camTarget": [0.3, 0.75, 0.5]
   }, {
     "name": "Work",
