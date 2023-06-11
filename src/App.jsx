@@ -27,12 +27,13 @@ function Model(props) {
 const App = () => {
   const [currentPage, setCurrentPage] = useState(pages[0].name);
 
-  const cam = useRef();
+  const cameraRef = useRef();
+  const controlsRef = useRef();
   const { animatedPosition } = useSpring({
     animatedPosition: pages.find(p => p.name === currentPage).camPostion,
     config: config.default,
     onChange: (e) => {
-      cam.current.position.set(e.value.animatedPosition[0], e.value.animatedPosition[1], e.value.animatedPosition[2]);
+      cameraRef.current.position.set(e.value.animatedPosition[0], e.value.animatedPosition[1], e.value.animatedPosition[2]);
     },
   });
 
@@ -40,8 +41,10 @@ const App = () => {
     animatedTarget: pages.find(p => p.name === currentPage).camTarget,
     config: config.default,
     onChange: (e) => {
-      const pos = new Vector3(e.value.animatedTarget[0], e.value.animatedTarget[1], e.value.animatedTarget[2]);
-      cam.current.lookAt(pos);
+      // const pos = new Vector3(e.value.animatedTarget[0], e.value.animatedTarget[1], e.value.animatedTarget[2]);
+      // cam.current.lookAt(pos);
+      controlsRef.current.target.set(e.value.animatedTarget[0], e.value.animatedTarget[1], e.value.animatedTarget[2]);
+      // console.log(controlsRef.current.target);
     },
   });
 
@@ -59,23 +62,22 @@ const App = () => {
               makeDefault
               far={1100}
               near={0.1}
-              ref={cam}
+              ref={cameraRef}
             />
           </animated.group>
-
-          {/* <OrbitControls
-              // ref={controlsRef}
-              enablePan={false}
+          <OrbitControls
+            ref={controlsRef}
+            enablePan={false}
             // enableRotate={cameraRotate}
             // maxPolarAngle={Math.PI / 2 + 0.1}
             // minPolarAngle={Math.PI / 2 - 0.1}
-              minDistance={0.25}
-              maxDistance={5}
-            /> */}
+            minDistance={0.25}
+            maxDistance={5}
+            // target={animatedTarget}
+            // target={animatedTarget.position}
+          />
           <EffectComposer>
-            <ChromaticAberration
-              offset={[0.005, 0.001]}
-            />
+            <ChromaticAberration offset={[0.005, 0.001]} />
             <DepthOfField focusDistance={0.1} focalLength={1} bokehScale={20} height={400} />
             {/* <BokehEffect /> */}
             <Bloom luminanceThreshold={0.7} luminanceSmoothing={0.9} height={300} />
@@ -101,6 +103,7 @@ const App = () => {
           ))
           }
         </ul>
+        <p>{animatedTarget.current}</p>
         <h1 className="pageTitle">{currentPage}</h1>
       </div>
     </Router>
