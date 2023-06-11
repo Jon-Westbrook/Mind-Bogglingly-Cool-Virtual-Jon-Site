@@ -6,7 +6,7 @@ import { OrbitControls, useGLTF, Environment, PerspectiveCamera } from '@react-t
 import { EffectComposer, DepthOfField, Bloom, Noise, Vignette, ChromaticAberration } from '@react-three/postprocessing';
 import { useSpring, animated, config } from '@react-spring/three';
 import './App.scss';
-import model from './assets/model4.glb';
+import model from './assets/model5.glb';
 import envMap from './assets/modern_buildings_2k.hdr';
 import pages from './assets/pages.json';
 
@@ -15,7 +15,7 @@ function Model(props) {
   const { scene, animations } = useGLTF(model);
   scene.traverse((obj) => { obj.frustumCulled = false; });
   mixer = new AnimationMixer(scene);
-  mixer.clipAction(animations[1]).play();
+  mixer.clipAction(animations[0]).play();
   useFrame((state, delta) => {
     mixer.update(delta);
   });
@@ -31,6 +31,9 @@ const App = () => {
   const { animatedPosition } = useSpring({
     animatedPosition: pages.find(p => p.name === currentPage).camPostion,
     config: config.default,
+    onChange: (e) => {
+      cam.current.position.set(e.value.animatedPosition[0], e.value.animatedPosition[1], e.value.animatedPosition[2]);
+    },
   });
 
   const { animatedTarget } = useSpring({
@@ -51,7 +54,7 @@ const App = () => {
     <Router>
       <div className="app">
         <Canvas shadows={{ type: 'PCFShadowMap' }}>
-          <animated.group position={animatedPosition}>
+          <animated.group>
             <PerspectiveCamera
               makeDefault
               far={1100}
