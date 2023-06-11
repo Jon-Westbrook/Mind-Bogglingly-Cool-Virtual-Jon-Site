@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { BrowserRouter as Router } from 'react-router-dom';
 import { Canvas, useFrame, useThree } from '@react-three/fiber';
-import { AnimationMixer, BoxGeometry, MeshPhysicalMaterial, MeshStandardMaterial, Object3D, Vector3, SRGBColorSpace, PlaneGeometry } from 'three';
+import { AnimationMixer, BoxGeometry, VSMShadowMap, PCFSoftShadowMap, MeshPhysicalMaterial, MeshStandardMaterial, Object3D, Vector3, SRGBColorSpace, PlaneGeometry } from 'three';
 import { OrbitControls, useGLTF, Environment, PerspectiveCamera } from '@react-three/drei';
 import { EffectComposer, DepthOfField, Bloom, Noise, Vignette, ChromaticAberration } from '@react-three/postprocessing';
 import { useSpring, animated, config } from '@react-spring/three';
@@ -83,7 +83,7 @@ const App = () => {
     <Router>
       <div className="app">
         <Canvas
-          shadows={{ type: 'VSMShadowMap' }}
+          shadows={{ type: PCFSoftShadowMap }}
           dpr={0.5}
           ref={canvasRef}
           // gl-outputColorSpace={SRGBColorSpace}
@@ -112,10 +112,11 @@ const App = () => {
             <directionalLight
               intensity={2}
               castShadow
-              shadow-mapSize={1024 * 12}
-              shadow-bias={-0.000004}
-              shadow-radius={5}
-              shadow-blurSamples={205}
+              shadow-mapSize={1024 * 2}
+              shadow-bias={0.000001}
+              // shadow-normalBias={-0.00001}
+              // shadow-radius={50}
+              // shadow-blurSamples={205}
               position={[1, 2, 1]}
               target-position={[0, 20, 0]}
 
