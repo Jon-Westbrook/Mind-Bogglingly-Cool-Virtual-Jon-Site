@@ -5,12 +5,12 @@
     "camTarget": [0, 1, 0]
   }, {
     "name": "About",
-    "camPostion": [-0.2, 1.7, 0.25],
-    "camTarget": [0, 1.7, 0.1]
+    "camPostion": [-1.2, 1.72, 0.35],
+    "camTarget": [0, 1.72, 0.0]
   }, {
     "name": "Experience",
-    "camPostion": [0.3, 0.75, -0.5],
-    "camTarget": [0.3, 0.75, 0.5]
+    "camPostion": [0, 0.2, 2],
+    "camTarget": [0, 0.2, 0]
   }, {
     "name": "Work",
     "camPostion": [0, 1.2, 1],
@@ -19,17 +19,5 @@
     "name": "Contact",
     "camPostion": [0, 3, -1],
     "camTarget": [0, 1, 0]
-  }, {
-    "name": "Butt Shot!",
-    "camPostion": [0, 1, -1],
-    "camTarget": [0.1, 1, 0]
-  }, {
-    "name": "Left Cheek 🍑",
-    "camPostion": [0.3, 0.7, -0.3],
-    "camTarget": [-0.1, 1, 0]
-  }, {
-    "name": "Foot",
-    "camPostion": [0, 0.2, 2],
-    "camTarget": [0, 0.2, 0]
   }
 ]

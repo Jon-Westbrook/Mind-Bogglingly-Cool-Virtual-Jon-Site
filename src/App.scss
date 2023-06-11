@@ -23,6 +23,21 @@ html, body {
     position: absolute;
     list-style: none;
     padding-inline-start: 1rem;
+    li {
+    
+      button {
+        width: 8rem;
+        margin: .25rem;
+        padding: .5rem;
+        border: none;
+        background: rgba(240, 240, 240, .7);
+        backdrop-filter: blur(.25rem);
+        -webkit-backdrop-filter: blur(.25rem);
+        color: black;
+        cursor: pointer;
+      }
+      
+    }
   }
 
   .pageTitle {

@@ -84,7 +84,7 @@ const App = () => {
       <div className="app">
         <Canvas
           shadows={{ type: PCFSoftShadowMap }}
-          dpr={0.5}
+          dpr={0.66}
           ref={canvasRef}
           // gl-outputColorSpace={SRGBColorSpace}
         >
@@ -92,7 +92,7 @@ const App = () => {
             <PerspectiveCamera
               makeDefault
               far={1100}
-              near={0.01}
+              near={0.1}
               fov={20}
               ref={cameraRef}
             />
