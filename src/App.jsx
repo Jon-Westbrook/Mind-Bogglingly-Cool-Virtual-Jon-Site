@@ -15,17 +15,15 @@ function Pages(props) {
   const { setCurrentPage } = props;
   useEffect(() => {
     const page = location.pathname.split('/')[2];
-    console.log(page);
     setCurrentPage(page);
   }, [location]);
 
   return (<div />);
 }
 
-function Model() {
+function Model(props) {
+  const { setCurrentPage } = props;
   const state = useThree();
-  // const location = useLocation();
-
   let mixer = null;
   const { scene, animations } = useGLTF(model);
   scene.traverse((obj) => {
@@ -37,7 +35,6 @@ function Model() {
       obj.material.needsUpdate = true;
     }
     if (obj.name === 'Wolf3D_Glasses') {
-      // console.log(obj);
       const newMat = new MeshPhysicalMaterial();
       newMat.map = obj.material.map;
       newMat.envMap = state.scene.environment;
@@ -55,33 +52,36 @@ function Model() {
   useFrame((state, delta) => {
     mixer.update(delta);
   });
-  return (
-    <primitive object={scene} />
-  );
+
+  useEffect(() => {
+    console.log('model loaded', scene);
+    setCurrentPage('Home');
+  }, [scene]);
+
+  return (<primitive object={scene} />);
 }
 
 const App = () => {
-  const [currentPage, setCurrentPage] = useState(pages[0].name);
+  const [currentPage, setCurrentPage] = useState('');
 
   const cameraRef = useRef();
   const controlsRef = useRef();
   const canvasRef = useRef();
-  // const [page, setPage] = useState('Home');
 
   const { animatedPosition } = useSpring({
     animatedPosition: pages.find(p => p.name === currentPage).camPostion,
     config: config.slow,
     onChange: (e) => {
-      cameraRef.current.position.set(e.value.animatedPosition[0], e.value.animatedPosition[1], e.value.animatedPosition[2]);
+      if (cameraRef.current) cameraRef.current.position.set(e.value.animatedPosition[0], e.value.animatedPosition[1], e.value.animatedPosition[2]);
     },
-  });
+  }, [currentPage]);
   const { animatedTarget } = useSpring({
     animatedTarget: pages.find(p => p.name === currentPage).camTarget,
     config: config.slow,
     onChange: (e) => {
-      controlsRef.current.target.set(e.value.animatedTarget[0], e.value.animatedTarget[1], e.value.animatedTarget[2]);
+      if (controlsRef.current) { controlsRef.current.target.set(e.value.animatedTarget[0], e.value.animatedTarget[1], e.value.animatedTarget[2]); }
     },
-  });
+  }, [currentPage]);
 
   return (
     <Router>
@@ -91,7 +91,6 @@ const App = () => {
           shadows={{ type: PCFSoftShadowMap }}
           dpr={0.5}
           ref={canvasRef}
-          // gl-outputColorSpace={SRGBColorSpace}
         >
           <animated.group>
             <PerspectiveCamera
@@ -131,7 +130,9 @@ const App = () => {
               // ground={{ height: 1, radius: 8 }}
             />
             <group>
-              <Model />
+              <Model
+                setCurrentPage={setCurrentPage}
+              />
             </group>
           </EffectComposer>
         </Canvas>

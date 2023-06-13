@@ -3,6 +3,11 @@
     "name": "",
     "camPostion": [0, 1, 5],
     "camTarget": [0, 1, 0]
+  },
+  {
+    "name": "Home",
+    "camPostion": [0, 1, 5],
+    "camTarget": [0, 1, 0]
   }, {
     "name": "About",
     "camPostion": [-1.2, 1.72, 0.35],
