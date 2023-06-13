@@ -1,5 +1,5 @@
-import React, { useRef, useState } from 'react';
-import { BrowserRouter as Router } from 'react-router-dom';
+import React, { useEffect, useRef, useState } from 'react';
+import { Link, BrowserRouter as Router, useLocation } from 'react-router-dom';
 import { Canvas, useFrame, useThree } from '@react-three/fiber';
 import { AnimationMixer, PCFSoftShadowMap, MeshPhysicalMaterial } from 'three';
 import { OrbitControls, useGLTF, Environment, PerspectiveCamera } from '@react-three/drei';
@@ -10,9 +10,21 @@ import model from './assets/model.glb';
 import envMap from './assets/modern_buildings_2k.hdr';
 import pages from './assets/pages.json';
 
+function Pages(props) {
+  const location = useLocation();
+  const { setCurrentPage } = props;
+  useEffect(() => {
+    const page = location.pathname.split('/')[2];
+    console.log(page);
+    setCurrentPage(page);
+  }, [location]);
+
+  return (<div />);
+}
 
 function Model() {
   const state = useThree();
+  // const location = useLocation();
 
   let mixer = null;
   const { scene, animations } = useGLTF(model);
@@ -25,7 +37,7 @@ function Model() {
       obj.material.needsUpdate = true;
     }
     if (obj.name === 'Wolf3D_Glasses') {
-      console.log(obj);
+      // console.log(obj);
       const newMat = new MeshPhysicalMaterial();
       newMat.map = obj.material.map;
       newMat.envMap = state.scene.environment;
@@ -48,13 +60,13 @@ function Model() {
   );
 }
 
-
 const App = () => {
   const [currentPage, setCurrentPage] = useState(pages[0].name);
 
   const cameraRef = useRef();
   const controlsRef = useRef();
   const canvasRef = useRef();
+  // const [page, setPage] = useState('Home');
 
   const { animatedPosition } = useSpring({
     animatedPosition: pages.find(p => p.name === currentPage).camPostion,
@@ -71,13 +83,9 @@ const App = () => {
     },
   });
 
-  const navigate = ({ target }) => {
-    const page = pages.find(({ name }) => name === target.innerText);
-    setCurrentPage(target.innerText);
-  };
-
   return (
     <Router>
+      <Pages setCurrentPage={setCurrentPage} />
       <div className="app">
         <Canvas
           shadows={{ type: PCFSoftShadowMap }}
@@ -131,7 +139,8 @@ const App = () => {
           {
           pages.map(page => (
             <li key={page.name}>
-              <button type="button" onClick={navigate}>{page.name}</button>
+              {/* <button type="button" onClick={navigate}>{page.name}</button> */}
+              <Link to={`/jonwest/${page.name}`}>{page.name}</Link>
             </li>
           ))
           }
