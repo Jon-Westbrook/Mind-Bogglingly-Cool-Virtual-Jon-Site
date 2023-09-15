@@ -12,10 +12,10 @@ import pages from './assets/content/pages.json';
 
 function Pages(props) {
   const location = useLocation();
-  const { setCurrentPage } = props;
+  const { setcurrentView } = props;
   useEffect(() => {
     const page = location.pathname.split('/')[1] || 'View1';
-    setCurrentPage(page);
+    setcurrentView(page);
   }, [location]);
   return null;
 }
@@ -35,7 +35,8 @@ function Model() {
   return <primitive object={scene} />;
 }
 
-function Camera() {
+function Camera(props) {
+  const { camPosition, camTarget } = props;
   const cameraRef = useRef();
   // const cameraTarget = {
   //   x: 0,
@@ -46,7 +47,7 @@ function Camera() {
   useFrame(() => {
     // cameraTarget.x -= 0.001;
     // cameraTarget.y -= 0.0005;
-    // cameraRef.current.lookAt(cameraTarget.x, cameraTarget.y, cameraTarget.z);
+    cameraRef.current.lookAt(camTarget[0], camTarget[1], camTarget[2]);
   });
 
 
@@ -57,36 +58,46 @@ function Camera() {
       near={0.1}
       fov={20}
       ref={cameraRef}
-      position={[0, 1.65, 1.55]}
+      position={camPosition}
     />
   );
 }
 
 const App = () => {
-  const [currentPage, setCurrentPage] = useState('View1');
-  const controlsRef = useRef();
+  const [currentView, setcurrentView] = useState('View1');
+  const [currentCamPosition, setCurrentCamPosition] = useState([0, 1.5, 1.5]);
+  const [currentCamTarget, setCurrentCamTarget] = useState([0, 1.5, 0]);
+  // const controlsRef = useRef();
   const canvasRef = useRef();
 
   useEffect(() => {
-    console.log(currentPage);
-  }, [currentPage]);
+    if (currentView) {
+      const { camPosition, camTarget } = pages.find(page => page.name === currentView);
+      // console.log(camPosition, camTarget);
+      setCurrentCamPosition(camPosition);
+      setCurrentCamTarget(camTarget);
+    }
+  }, [currentView]);
 
 
   return (
     <Router>
-      <Pages setCurrentPage={setCurrentPage} />
+      <Pages setcurrentView={setcurrentView} />
 
       <div className="app">
         <Canvas shadows={{ type: PCFSoftShadowMap }} dpr={0.5} ref={canvasRef}>
 
-          <Camera />
+          <Camera
+            camPosition={currentCamPosition}
+            camTarget={currentCamTarget}
+          />
 
           <EffectComposer>
-            <ChromaticAberration offset={[0.0004, 0.0004]} />
+            {/* <ChromaticAberration offset={[0.0004, 0.0004]} />
             <DepthOfField focusDistance={0.1} focalLength={3} bokehScale={16} height={1024} />
             <Bloom luminanceThreshold={0.9} luminanceSmoothing={0.9} height={300} />
-            <Vignette eskil={false} offset={0} darkness={0.5} />
-            <directionalLight intensity={3} castShadow shadow-mapSize={1024 * 2} shadow-bias={0.000001} position={[1, 2, 1]} target-position={[0, 20, 0]} />
+  <Vignette eskil={false} offset={0} darkness={0.5} /> */ }
+            <directionalLight intensity={2} castShadow shadow-mapSize={1024 * 2} shadow-bias={0.000001} position={[1, 2, 1]} target-position={[0, 20, 0]} />
 
             <Environment
               files={envMap}
