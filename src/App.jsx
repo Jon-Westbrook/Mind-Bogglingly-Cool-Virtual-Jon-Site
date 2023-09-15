@@ -6,9 +6,9 @@ import { OrbitControls, useGLTF, Environment, PerspectiveCamera } from '@react-t
 import { EffectComposer, DepthOfField, Bloom, Vignette, ChromaticAberration } from '@react-three/postprocessing';
 import { useSpring, animated, config } from '@react-spring/three';
 import './App.scss';
-import model from './assets/model2.glb';
-import envMap from './assets/hamburg_canal_2k.hdr';
-import pages from './assets/pages.json';
+import model from './assets/models/model2.glb';
+import envMap from './assets/img/environments/hamburg_canal_2k.hdr';
+import pages from './assets/content/pages.json';
 
 function Pages(props) {
   const location = useLocation();
