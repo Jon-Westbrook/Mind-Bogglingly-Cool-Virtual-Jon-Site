@@ -7,7 +7,7 @@ import { EffectComposer, DepthOfField, Bloom, Vignette, ChromaticAberration } fr
 import { useSpring, animated, config } from '@react-spring/three';
 import './App.scss';
 import model from './assets/model2.glb';
-import envMap from './assets/modern_buildings_2k.hdr';
+import envMap from './assets/hamburg_canal_2k.hdr';
 import pages from './assets/pages.json';
 
 function Pages(props) {
