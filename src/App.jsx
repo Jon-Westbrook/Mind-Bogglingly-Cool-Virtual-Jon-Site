@@ -28,41 +28,48 @@ function Model() {
   mixer.clipAction(animations[1]).play();
 
   useFrame((state, delta) => {
-    mixer.update(delta);
+    // mixer.update(delta);
+    // console.log(cameraRef.current);
   });
 
   return <primitive object={scene} />;
 }
 
+function Camera() {
+  const cameraRef = useRef();
+  // const cameraTarget = {
+  //   x: 0,
+  //   y: 1.65,
+  //   z: 0
+  // };
+
+  useFrame(() => {
+    // cameraTarget.x -= 0.001;
+    // cameraTarget.y -= 0.0005;
+    // cameraRef.current.lookAt(cameraTarget.x, cameraTarget.y, cameraTarget.z);
+  });
+
+
+  return (
+    <PerspectiveCamera
+      makeDefault
+      far={1100}
+      near={0.1}
+      fov={20}
+      ref={cameraRef}
+      position={[0, 1.65, 1.55]}
+    />
+  );
+}
+
 const App = () => {
   const [currentPage, setCurrentPage] = useState('View1');
-  const cameraRef = useRef();
   const controlsRef = useRef();
   const canvasRef = useRef();
 
-  const { animatedPosition } = useSpring(
-    {
-      animatedPosition: pages.find(p => p.name === currentPage).camPostion,
-      config: config.slow,
-      onChange: e => {
-        if (cameraRef.current) cameraRef.current.position.set(e.value.animatedPosition[0], e.value.animatedPosition[1], e.value.animatedPosition[2]);
-      },
-    },
-    [currentPage]
-  );
-
-  const { animatedTarget } = useSpring(
-    {
-      animatedTarget: pages.find(p => p.name === currentPage).camTarget,
-      config: config.slow,
-      onChange: e => {
-        if (controlsRef.current) {
-          controlsRef.current.target.set(e.value.animatedTarget[0], e.value.animatedTarget[1], e.value.animatedTarget[2]);
-        }
-      },
-    },
-    [currentPage]
-  );
+  useEffect(() => {
+    console.log(currentPage);
+  }, [currentPage]);
 
 
   return (
@@ -72,16 +79,7 @@ const App = () => {
       <div className="app">
         <Canvas shadows={{ type: PCFSoftShadowMap }} dpr={0.5} ref={canvasRef}>
 
-          <animated.group>
-            <PerspectiveCamera makeDefault far={1100} near={0.1} fov={20} ref={cameraRef} />
-          </animated.group>
-
-          <OrbitControls
-            ref={controlsRef}
-            // enablePan={false}
-            minDistance={0.25}
-            maxDistance={5}
-          />
+          <Camera />
 
           <EffectComposer>
             <ChromaticAberration offset={[0.0004, 0.0004]} />
