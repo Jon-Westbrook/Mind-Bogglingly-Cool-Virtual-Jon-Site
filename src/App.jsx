@@ -14,11 +14,10 @@ function Pages(props) {
   const location = useLocation();
   const { setCurrentPage } = props;
   useEffect(() => {
-    const page = location.pathname.split('/')[2] || 'Home';
+    const page = location.pathname.split('/')[1] || 'View1';
     setCurrentPage(page);
   }, [location]);
-
-  return <div />;
+  return null;
 }
 
 function Model(props) {
