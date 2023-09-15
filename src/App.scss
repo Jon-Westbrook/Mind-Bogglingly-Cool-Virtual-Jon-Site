@@ -48,7 +48,8 @@ body {
     align-items: center;
   }
 
-  .nav a:hover {
+  .nav a:hover,
+  .nav a.active-link {
     background-color: limegreen;
     color: black;
   }
