@@ -4,9 +4,9 @@ import { Canvas, useFrame } from '@react-three/fiber';
 import { AnimationMixer, PCFSoftShadowMap } from 'three';
 import { useGLTF, Environment, PerspectiveCamera } from '@react-three/drei';
 import { EffectComposer, DepthOfField, Bloom, Vignette, ChromaticAberration } from '@react-three/postprocessing';
-import './App.scss';
+import './styles/App.scss';
 import model from './assets/models/model2.glb';
-import envMap from './assets/img/environments/hamburg_canal_2k.hdr';
+import envMap from './assets/img/environments/kloofendal_43d_clear_puresky_4k.hdr';
 import pages from './assets/content/pages.json';
 
 function Pages(props) {
@@ -39,6 +39,7 @@ function Camera(props) {
 
   useEffect(() => {
     if (cameraRef.current && camTarget && camPosition) {
+      console.log(`camPosition: ${camPosition}`, `camTarget: ${camTarget}`);
       cameraRef.current.position.set(camPosition[0], camPosition[1], camPosition[2]);
       cameraRef.current.lookAt(camTarget[0], camTarget[1], camTarget[2]);
     }
@@ -63,8 +64,7 @@ const App = () => {
 
   useEffect(() => {
     if (currentPage) {
-      const { camPosition, camTarget } = pages.find(page => page.name === currentPage);
-      console.log(camPosition, camTarget);
+      const { camPosition, camTarget } = pages.find(page => page.url === currentPage);
       setCurrentCamPosition(camPosition);
       setCurrentCamTarget(camTarget);
     }
@@ -74,7 +74,7 @@ const App = () => {
     <Router>
       <Pages setCurrentPage={setCurrentPage} />
       <div className="app">
-        <Canvas shadows={{ type: PCFSoftShadowMap }} dpr={0.5} ref={canvasRef}>
+        <Canvas shadows={{ type: PCFSoftShadowMap }} dpr={1} ref={canvasRef}>
 
           <Camera
             camPosition={currentCamPosition}
@@ -82,18 +82,18 @@ const App = () => {
           />
 
           <EffectComposer>
-            <directionalLight intensity={3} castShadow shadow-mapSize={1024 * 2} shadow-bias={0.000001} position={[1, 2, 1]} target-position={[0, 20, 0]} />
+            <directionalLight intensity={0.5} castShadow shadow-mapSize={1024 * 2} shadow-bias={0.000001} position={[0, 1.7, 0]} target-position={[0, 1.55, 0]} />
             {/* <ChromaticAberration offset={[0.0004, 0.0004]} /> */}
             {/* <DepthOfField focusDistance={0.1} focalLength={3} bokehScale={16} height={1024} /> */}
             {/* <Bloom luminanceThreshold={0.9} luminanceSmoothing={0.9} height={300} /> */}
-            {/* <Vignette eskil={false} offset={0} darkness={0.5} /> */}
+            <Vignette eskil={false} offset={0} darkness={0.6} />
 
             <Environment
               files={envMap}
               background
               exposure={1}
               blur={0.1}
-              ground={{ height: 1, radius: 8 }}
+              ground={{ height: 1, radius: 5 }}
             />
 
             <group>
@@ -104,11 +104,11 @@ const App = () => {
 
         <ul className="nav">
           {pages.map(page => (
-            <li key={page.name}>
+            <li key={page.url}>
               <Link
-                to={`/${page.name}`}
-                className={currentPage === page.name ? 'active-link' : ''}
-              >{page.name}
+                to={`/${page.url}`}
+                className={currentPage === page.url ? 'active-link' : ''}
+              >{page['link-copy']}
               </Link>
             </li>
           ))}
