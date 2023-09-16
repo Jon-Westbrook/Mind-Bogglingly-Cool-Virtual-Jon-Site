@@ -8,3 +8,7 @@ Creating a virtual Jon with the latest in React and ThreeJS technologies.
 `npm start`
 
 open your browser to http://localhost:8080
+
+## Features
+
+- Dynamic view-based models and environments targetable by URL
