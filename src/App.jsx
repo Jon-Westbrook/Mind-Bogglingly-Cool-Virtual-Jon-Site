@@ -92,8 +92,8 @@ const App = () => {
               files={envMap}
               background
               exposure={1}
-              blur={0.1}
-              ground={{ height: 1, radius: 5 }}
+              blur={0}
+              ground={{ height: 1, radius: 8 }}
             />
 
             <group>
