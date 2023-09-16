@@ -19,6 +19,24 @@ function Pages(props) {
   return null;
 }
 
+function NavMenu({ pages, currentPage }) {
+  return (
+    <ul className="nav">
+      {pages.map(page => (
+        <li key={page.url}>
+          <Link
+            to={`/${page.url}`}
+            className={currentPage === page.url ? 'active-link' : ''}
+          >
+            {page['link-copy']}
+          </Link>
+        </li>
+      ))}
+    </ul>
+  );
+}
+
+
 function Model() {
   let mixer = null;
   const { scene, animations } = useGLTF(model);
@@ -84,7 +102,7 @@ const App = () => {
           <EffectComposer>
             <directionalLight intensity={0.5} castShadow shadow-mapSize={1024 * 2} shadow-bias={0.000001} position={[0, 1.7, 0]} target-position={[0, 1.55, 0]} />
             {/* <ChromaticAberration offset={[0.0004, 0.0004]} /> */}
-            {/* <DepthOfField focusDistance={0.1} focalLength={3} bokehScale={16} height={1024} /> */}
+            {/* <DepthOfField focusDistance={0.1} focalLength={35} bokehScale={8} height={1024} /> */}
             {/* <Bloom luminanceThreshold={0.9} luminanceSmoothing={0.9} height={300} /> */}
             <Vignette eskil={false} offset={0} darkness={0.6} />
 
@@ -96,23 +114,13 @@ const App = () => {
               ground={{ height: 1, radius: 8 }}
             />
 
-            <group>
-              <Model />
-            </group>
+            <Model />
+
           </EffectComposer>
+
         </Canvas>
 
-        <ul className="nav">
-          {pages.map(page => (
-            <li key={page.url}>
-              <Link
-                to={`/${page.url}`}
-                className={currentPage === page.url ? 'active-link' : ''}
-              >{page['link-copy']}
-              </Link>
-            </li>
-          ))}
-        </ul>
+        <NavMenu pages={pages} currentPage={currentPage} />
       </div>
     </Router>
   );
