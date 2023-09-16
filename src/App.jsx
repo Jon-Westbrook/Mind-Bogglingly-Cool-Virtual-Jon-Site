@@ -1,13 +1,25 @@
-import React, { useEffect, useRef, useState } from 'react';
-import { Link, BrowserRouter as Router, useLocation } from 'react-router-dom';
-import { Canvas, useFrame } from '@react-three/fiber';
 import { AnimationMixer, PCFSoftShadowMap } from 'three';
-import { useGLTF, Environment, PerspectiveCamera } from '@react-three/drei';
+import React, { useEffect, useRef, useState } from 'react';
+import { Canvas, useFrame } from '@react-three/fiber';
+import { Link, BrowserRouter as Router, useLocation } from 'react-router-dom';
+import { useGLTF, Environment, PerspectiveCamera, useProgress } from '@react-three/drei';
 import { EffectComposer, DepthOfField, Bloom, Vignette, ChromaticAberration } from '@react-three/postprocessing';
 import './styles/App.scss';
 import model from './assets/models/model2.glb';
 import envMap from './assets/img/environments/kloofendal_43d_clear_puresky_4k.hdr';
 import pages from './assets/content/pages.json';
+
+function Loader() {
+  const { progress } = useProgress();
+
+  return (
+    <div className="loader-container">
+      <div className="loader">
+        <div className="loader-inner">Loading... {progress}%</div>
+      </div>
+    </div>
+  );
+}
 
 function Pages(props) {
   const location = useLocation();
@@ -19,10 +31,10 @@ function Pages(props) {
   return null;
 }
 
-function NavMenu({ pages, currentPage }) {
+function NavMenu({ pageList, currentPage }) {
   return (
     <ul className="nav">
-      {pages.map(page => (
+      {pageList.map(page => (
         <li key={page.url}>
           <Link
             to={`/${page.url}`}
@@ -35,7 +47,6 @@ function NavMenu({ pages, currentPage }) {
     </ul>
   );
 }
-
 
 function Model() {
   let mixer = null;
@@ -79,49 +90,55 @@ const App = () => {
   const [currentCamPosition, setCurrentCamPosition] = useState([0, 1.7, 2]);
   const [currentCamTarget, setCurrentCamTarget] = useState([0, 1.55, 0]);
   const canvasRef = useRef();
+  const { active } = useProgress();
 
   useEffect(() => {
-    if (currentPage) {
+    if (!active && currentPage) {
+      // Check if loading is complete and currentPage is set
       const { camPosition, camTarget } = pages.find(page => page.url === currentPage);
       setCurrentCamPosition(camPosition);
       setCurrentCamTarget(camTarget);
     }
-  }, [currentPage]);
+  }, [active, currentPage]);
 
   return (
     <Router>
-      <Pages setCurrentPage={setCurrentPage} />
-      <div className="app">
-        <Canvas shadows={{ type: PCFSoftShadowMap }} dpr={1} ref={canvasRef}>
 
-          <Camera
-            camPosition={currentCamPosition}
-            camTarget={currentCamTarget}
-          />
+      {active ? (<Loader />) : (
+        <>
+          <Pages setCurrentPage={setCurrentPage} />
+          <div className="app">
+            <Canvas shadows={{ type: PCFSoftShadowMap }} dpr={1} ref={canvasRef}>
 
-          <EffectComposer>
-            <directionalLight intensity={0.5} castShadow shadow-mapSize={1024 * 2} shadow-bias={0.000001} position={[0, 1.7, 0]} target-position={[0, 1.55, 0]} />
-            {/* <ChromaticAberration offset={[0.0004, 0.0004]} /> */}
-            {/* <DepthOfField focusDistance={0.1} focalLength={35} bokehScale={8} height={1024} /> */}
-            {/* <Bloom luminanceThreshold={0.9} luminanceSmoothing={0.9} height={300} /> */}
-            <Vignette eskil={false} offset={0} darkness={0.6} />
+              <Camera
+                camPosition={currentCamPosition}
+                camTarget={currentCamTarget}
+              />
 
-            <Environment
-              files={envMap}
-              background
-              exposure={1}
-              blur={0}
-              ground={{ height: 1, radius: 8 }}
-            />
+              <EffectComposer>
+                <directionalLight intensity={0.5} castShadow shadow-mapSize={1024 * 2} shadow-bias={0.000001} position={[0, 1.7, 0]} target-position={[0, 1.55, 0]} />
+                {/* <ChromaticAberration offset={[0.0004, 0.0004]} /> */}
+                {/* <DepthOfField focusDistance={0.1} focalLength={35} bokehScale={8} height={1024} /> */}
+                {/* <Bloom luminanceThreshold={0.9} luminanceSmoothing={0.9} height={300} /> */}
+                <Vignette eskil={false} offset={0} darkness={0.6} />
 
-            <Model />
+                <Environment
+                  files={envMap}
+                  background
+                  exposure={1}
+                  blur={0}
+                  ground={{ height: 1, radius: 8 }}
+                />
 
-          </EffectComposer>
+                <Model />
+              </EffectComposer>
+            </Canvas>
+            <NavMenu pageList={pages} currentPage={currentPage} />
+          </div>
+        </>
+      )}
 
-        </Canvas>
 
-        <NavMenu pages={pages} currentPage={currentPage} />
-      </div>
     </Router>
   );
 };
