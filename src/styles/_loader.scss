@@ -7,9 +7,12 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: #192c59;
 
   .loader {
+    width: 66%;
     text-align: center;
+
     color: white;
     font-size: 24px;
     font-weight: bold;
@@ -17,21 +20,29 @@
 
     .progress-bar {
       width: 100%;
-      max-width: 400px;
-      height: 20px;
+      height: 10px;
       background-color: rgba(0, 0, 0, 0.2);
-      border-radius: 10px;
+      border-radius: 5px;
 
       .progress {
         height: 100%;
         background-color: #1abc9c;
         border-radius: 8px;
       }
+
+      .loading-text {
+        text-align: center;
+        color: white;
+        font-size: 24px;
+        font-weight: bold;
+        text-transform: uppercase;
+        animation: flashText 0.5s infinite;
+      }
     }
   }
 
   &.loaded {
-    opacity: 0;
+    opacity: 1;
     pointer-events: none;
   }
 }
