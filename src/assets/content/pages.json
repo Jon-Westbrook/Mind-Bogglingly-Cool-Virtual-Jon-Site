@@ -1,16 +1,19 @@
 [
   {
-    "name": "View1",
+    "url": "View1",
+    "link-copy": "1",
     "camPosition": [0, 1.7, 2],
     "camTarget": [0, 1.55, 0]
   },
   {
-    "name": "View2",
+    "url": "View2",
+    "link-copy": "2",
     "camPosition": [-2, 1.7, 0],
     "camTarget": [0, 1.55, 0]
   },
   {
-    "name": "View3",
+    "url": "View3",
+    "link-copy": "3",
     "camPosition": [0, 1.7, -2],
     "camTarget": [0, 1.55, 0]
   }
