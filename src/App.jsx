@@ -1,5 +1,5 @@
 import { AnimationMixer, PCFSoftShadowMap } from 'three';
-import React, { useEffect, useRef, useState } from 'react';
+import React, { useEffect, useRef, useState, Suspense } from 'react';
 import { Canvas, useFrame } from '@react-three/fiber';
 import { Link, BrowserRouter as Router, useLocation } from 'react-router-dom';
 import { useGLTF, Environment, PerspectiveCamera, useProgress } from '@react-three/drei';
@@ -96,18 +96,19 @@ const App = () => {
 
   useEffect(() => {
     if (!active && currentPage) {
-      // Check if loading is complete and currentPage is set
       const { camPosition, camTarget } = pages.find(page => page.url === currentPage);
       setCurrentCamPosition(camPosition);
       setCurrentCamTarget(camTarget);
     }
   }, [active, currentPage]);
 
+
   return (
     <Router>
-      {active ? (<Loader />) : (
+      <Suspense fallback={<Loader />}>
         <div className="app">
           <Pages setCurrentPage={setCurrentPage} />
+
           <Canvas shadows={{ type: PCFSoftShadowMap }} dpr={1} ref={canvasRef}>
             <Camera
               camPosition={currentCamPosition}
@@ -125,11 +126,10 @@ const App = () => {
               />
               <Model />
             </EffectComposer>
-
           </Canvas>
           <NavMenu pageList={pages} currentPage={currentPage} />
         </div>
-      )}
+      </Suspense>
     </Router>
   );
 };
