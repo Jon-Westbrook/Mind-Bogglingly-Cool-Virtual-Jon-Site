@@ -2,7 +2,7 @@ import { AnimationMixer, PCFSoftShadowMap } from 'three';
 import React, { useEffect, useRef, useState, Suspense } from 'react';
 import { Canvas, useFrame } from '@react-three/fiber';
 import { Link, BrowserRouter as Router, useLocation } from 'react-router-dom';
-import { useGLTF, Environment, PerspectiveCamera, useProgress } from '@react-three/drei';
+import { useGLTF, Environment, PerspectiveCamera, useProgress, PresentationControls } from '@react-three/drei';
 import { EffectComposer, Vignette } from '@react-three/postprocessing';
 import './styles/App.scss';
 import model from './assets/models/model2.glb';
@@ -70,7 +70,7 @@ function Camera(props) {
 
   useEffect(() => {
     if (cameraRef.current && camTarget && camPosition) {
-      console.log(`camPosition: ${camPosition}`, `camTarget: ${camTarget}`);
+      // console.log(`camPosition: ${camPosition}`, `camTarget: ${camTarget}`);
       cameraRef.current.position.set(camPosition[0], camPosition[1], camPosition[2]);
       cameraRef.current.lookAt(camTarget[0], camTarget[1], camTarget[2]);
     }
@@ -116,7 +116,7 @@ function App() {
             />
             <EffectComposer>
               <directionalLight intensity={0.5} castShadow shadow-mapSize={1024 * 2} shadow-bias={0.000001} position={[0, 1.7, 0]} target-position={[0, 1.55, 0]} />
-              <Vignette eskil={false} offset={0} darkness={0.6} />
+              <Vignette eskil={false} offset={0} darkness={0.9} />
               <Environment
                 files={envMap}
                 background
@@ -124,7 +124,19 @@ function App() {
                 blur={0}
                 ground={{ height: 1, radius: 8 }}
               />
-              <Model />
+              <PresentationControls
+                enabled
+                global={false}
+                cursor
+                snap
+                speed={3}
+                zoom={1}
+                polar={[0, Math.PI / 20]}
+                azimuth={[-Infinity, Infinity]}
+                config={{ mass: 1, tension: 170, friction: 26 }}
+              ><Model />
+              </PresentationControls>
+
             </EffectComposer>
           </Canvas>
           <NavMenu pageList={pages} currentPage={currentPage} />
