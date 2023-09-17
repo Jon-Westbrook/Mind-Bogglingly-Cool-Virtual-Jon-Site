@@ -1,9 +1,9 @@
-import { AnimationMixer, PCFSoftShadowMap } from 'three';
 import React, { useEffect, useRef, useState, Suspense } from 'react';
-import { Canvas, useFrame } from '@react-three/fiber';
 import { Link, BrowserRouter as Router, useLocation } from 'react-router-dom';
+import { Canvas, useFrame } from '@react-three/fiber';
 import { useGLTF, Environment, PerspectiveCamera, useProgress, PresentationControls } from '@react-three/drei';
 import { EffectComposer, Vignette } from '@react-three/postprocessing';
+import { AnimationMixer, PCFSoftShadowMap } from 'three';
 import './styles/App.scss';
 import model from './assets/models/model2.glb';
 import envMap from './assets/img/environments/kloofendal_43d_clear_puresky_4k.hdr';
@@ -29,7 +29,7 @@ function Pages(props) {
   useEffect(() => {
     const page = location.pathname.split('/')[1] || 'View1';
     setCurrentPage(page);
-  }, [location]);
+  }, [location, setCurrentPage]);
   return null;
 }
 
@@ -108,7 +108,6 @@ function App() {
         <div className="app">
 
           <Pages setCurrentPage={setCurrentPage} />
-
           <Canvas shadows={{ type: PCFSoftShadowMap }} dpr={1} ref={canvasRef}>
             <Camera
               camPosition={currentCamPosition}
@@ -122,7 +121,6 @@ function App() {
                 background
                 exposure={1}
                 blur={0}
-                ground={{ height: 1, radius: 8 }}
               />
               <PresentationControls
                 enabled
@@ -136,7 +134,6 @@ function App() {
                 config={{ mass: 1, tension: 170, friction: 26 }}
               ><Model />
               </PresentationControls>
-
             </EffectComposer>
           </Canvas>
           <NavMenu pageList={pages} currentPage={currentPage} />
