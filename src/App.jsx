@@ -1,27 +1,16 @@
 import React, { useEffect, useRef, useState, Suspense } from 'react';
-import { Link, BrowserRouter as Router, useLocation } from 'react-router-dom';
-import { Canvas, useFrame } from '@react-three/fiber';
-import { useGLTF, Environment, PerspectiveCamera, useProgress, PresentationControls } from '@react-three/drei';
+import { BrowserRouter as Router, useLocation } from 'react-router-dom';
+import { Canvas } from '@react-three/fiber';
+import { Environment, PerspectiveCamera, useProgress, PresentationControls } from '@react-three/drei';
 import { EffectComposer, Vignette } from '@react-three/postprocessing';
-import { AnimationMixer, PCFSoftShadowMap } from 'three';
-import './styles/App.scss';
-import model from './assets/models/model2.glb';
-import envMap from './assets/img/environments/kloofendal_43d_clear_puresky_4k.hdr';
-import pages from './assets/content/pages.json';
+import { PCFSoftShadowMap } from 'three';
 
-function Loader() {
-  const { progress } = useProgress();
-  return (
-    <div className={`loader-container ${Math.round(progress) === 100 ? 'loaded' : ''}`}>
-      <div className="loader">
-        <div className="progress-bar">
-          <div className="progress" style={{ width: `${Math.round(progress)}%` }} />
-          <div className="loading-text" style={{ marginTop: '20px' }}>Yes, it&rsquo;s big...{Math.round(progress)}%</div>
-        </div>
-      </div>
-    </div>
-  );
-}
+import Loader from './Loader';
+import NavMenu from './NavMenu';
+import Model from './Model';
+
+import pages from './assets/content/pages.json';
+import envMap from './assets/img/environments/kloofendal_43d_clear_puresky_4k.hdr';
 
 function Pages(props) {
   const location = useLocation();
@@ -31,37 +20,6 @@ function Pages(props) {
     setCurrentPage(page);
   }, [location, setCurrentPage]);
   return null;
-}
-
-function NavMenu({ pageList, currentPage }) {
-  return (
-    <ul className="nav">
-      {pageList.map(page => (
-        <li key={page.url}>
-          <Link
-            to={`/${page.url}`}
-            className={currentPage === page.url ? 'active-link' : ''}
-          >
-            {page['link-copy']}
-          </Link>
-        </li>
-      ))}
-    </ul>
-  );
-}
-
-function Model() {
-  let mixer = null;
-  const { scene, animations } = useGLTF(model);
-
-  mixer = new AnimationMixer(scene);
-  mixer.clipAction(animations[1]).play();
-
-  useFrame((state, delta) => {
-    mixer.update(delta);
-  });
-
-  return <primitive object={scene} />;
 }
 
 function Camera(props) {
