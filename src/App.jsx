@@ -16,7 +16,7 @@ function Loader() {
       <div className="loader">
         <div className="progress-bar">
           <div className="progress" style={{ width: `${Math.round(progress)}%` }} />
-          <div className="loading-text" style={{ marginTop: '20px' }}>Loading...{Math.round(progress)}%</div>
+          <div className="loading-text" style={{ marginTop: '20px' }}>Yes, it&rsquo;s big...{Math.round(progress)}%</div>
         </div>
       </div>
     </div>
@@ -87,7 +87,7 @@ function Camera(props) {
   );
 }
 
-const App = () => {
+function App() {
   const [currentPage, setCurrentPage] = useState('View1');
   const [currentCamPosition, setCurrentCamPosition] = useState([0, 1.7, 2]);
   const [currentCamTarget, setCurrentCamTarget] = useState([0, 1.55, 0]);
@@ -102,11 +102,11 @@ const App = () => {
     }
   }, [active, currentPage]);
 
-
   return (
     <Router>
       <Suspense fallback={<Loader />}>
         <div className="app">
+
           <Pages setCurrentPage={setCurrentPage} />
 
           <Canvas shadows={{ type: PCFSoftShadowMap }} dpr={1} ref={canvasRef}>
@@ -132,6 +132,6 @@ const App = () => {
       </Suspense>
     </Router>
   );
-};
+}
 
 export default App;
