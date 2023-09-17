@@ -11,27 +11,31 @@
     "@react-three/drei": "^9.66.1",
     "@react-three/fiber": "^8.8.10",
     "@react-three/postprocessing": "^2.8.3",
-    "auto-bind": "^5.0.1",
-    "inobounce": "^0.2.1",
+    "@vitejs/plugin-react": "^4.0.4",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.4.1",
-    "sass": "^1.55.0",
-    "three": "^0.156.1"
+    "three": "^0.156.1",
+    "vite": "^4.4.9"
   },
   "devDependencies": {
     "@types/react": "^18.0.17",
     "@types/react-dom": "^18.0.6",
-    "@vitejs/plugin-react": "^4.0.4",
+    "auto-bind": "^5.0.1",
     "eslint": "^8.49.0",
     "eslint-config-airbnb": "^19.0.4",
-    "eslint-plugin-import": "^2.14.0",
-    "eslint-plugin-jsx-a11y": "^6.1.1",
-    "eslint-plugin-react": "^7.11.1",
-    "vite": "^4.4.9"
+    "eslint-plugin-import": "^2.25.3",
+    "eslint-plugin-jsx-a11y": "^6.5.1",
+    "eslint-plugin-react": "^7.33.2",
+    "eslint-plugin-react-hooks": "^4.3.0",
+    "inobounce": "^0.2.1",
+    "sass": "^1.55.0"
   },
   "eslintConfig": {
-    "extends": "airbnb",
+    "extends": [
+      "airbnb",
+      "airbnb/hooks"
+    ],
     "env": {
       "node": true,
       "browser": true,
