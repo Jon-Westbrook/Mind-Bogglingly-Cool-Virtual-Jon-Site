@@ -5,28 +5,24 @@ $breakpoints: (
   "xl": 1280px,
 );
 
-// Mixin to target small screens (sm and up)
 @mixin sm-up {
   @media (min-width: map-get($breakpoints, "sm")) {
     @content;
   }
 }
 
-// Mixin to target medium screens (md and up)
 @mixin md-up {
   @media (min-width: map-get($breakpoints, "md")) {
     @content;
   }
 }
 
-// Mixin to target large screens (lg and up)
 @mixin lg-up {
   @media (min-width: map-get($breakpoints, "lg")) {
     @content;
   }
 }
 
-// Mixin to target extra-large screens (xl and up)
 @mixin xl-up {
   @media (min-width: map-get($breakpoints, "xl")) {
     @content;
