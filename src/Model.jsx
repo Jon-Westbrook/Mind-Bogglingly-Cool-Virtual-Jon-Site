@@ -2,7 +2,7 @@ import { useGLTF } from '@react-three/drei';
 import { AnimationMixer } from 'three';
 import { useFrame } from '@react-three/fiber';
 import { DRACOLoader } from 'draco3dgltf';
-import model from './assets/models/model3.glb';
+import model from './assets/models/model4.glb';
 
 function Model() {
   let mixer = null;
