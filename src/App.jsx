@@ -8,7 +8,7 @@ import Loader from './Loader';
 import NavMenu from './NavMenu';
 import Model from './Model';
 import pages from './assets/content/pages.json'; 
-import envMap from './assets/img/environments/kloofendal_43d_clear_puresky_4k.hdr';
+import envMap from './assets/img/environments/kloofendal_48d_partly_cloudy_puresky_2k.hdr';
 import './styles/App.scss';
 
 function Pages(props) {
@@ -90,11 +90,11 @@ function App() {
 								<PresentationControls
 									enabled
 									global={true}
-									cursor
+									cursor={false}
 									snap={true}
 									speed={8}
 									zoom={1}
-									polar={[0, 0.2]}
+									polar={[0, 0.1]}
 									azimuth={[-Infinity, Infinity]}
 									config={{ mass: 1, tension: 170, friction: 26 }}
 								><Model />
