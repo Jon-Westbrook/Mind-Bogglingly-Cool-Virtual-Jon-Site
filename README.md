@@ -15,3 +15,4 @@ open your browser to http://localhost:8080
 - React 18
 - React.js and Three.js implentation via @react-three/fiber
 - Dynamic view-based models and environments targetable by URL
+- GLB model conversion to JSX
