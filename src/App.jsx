@@ -3,7 +3,7 @@ import { BrowserRouter as Router } from 'react-router-dom';
 import { Canvas } from '@react-three/fiber';
 import { PCFSoftShadowMap } from 'three';
 import Loader from './Loader';
-import Model from './assets/models/Model3.jsx'; 
+import Model from './Model'; 
 import './styles/App.scss';
 import { OrbitControls } from '@react-three/drei';
 
