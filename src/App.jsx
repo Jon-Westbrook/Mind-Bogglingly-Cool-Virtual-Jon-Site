@@ -1,17 +1,26 @@
-import { useState } from 'react'
+import { Suspense, useRef } from 'react';
+import { BrowserRouter as Router } from 'react-router-dom';
+import { Canvas } from '@react-three/fiber';
+import { PCFSoftShadowMap } from 'three';
+import Loader from './Loader';
+import Model from './Model';
 import './styles/App.scss';
 
 function App() {
-  const [count, setCount] = useState(0)
-  console.log("I rendered")
-
+  const canvasRef = useRef();
   return (
     <>
-      <button onClick={() => setCount((count) => count + 1)}>
-        count is {count}
-      </button>       
+      <Router>
+        <Suspense fallback={<Loader />}> 
+          <Canvas shadows={{ type: PCFSoftShadowMap }} dpr={1} ref={canvasRef}>
+            <Model />
+          </Canvas>
+        </Suspense>     
+      </Router>
     </>
-  )
+  );
 }
 
-export default App
+
+
+export default App;

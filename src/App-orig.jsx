@@ -55,7 +55,7 @@ function App() {
 
   useEffect(() => {
     if (!active && currentPage) {
-      const { camPosition, camTarget } = pages.find(page => page.url === currentPage);
+      const { camPosition, camTarget } = pages.find((page) => page.url === currentPage);
       setCurrentCamPosition(camPosition);
       setCurrentCamTarget(camTarget);
       setIsLoaded(true);

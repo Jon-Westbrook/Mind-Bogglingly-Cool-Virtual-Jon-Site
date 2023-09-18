@@ -1,4 +1,3 @@
-import React from 'react';
 import { useGLTF } from '@react-three/drei';
 import { AnimationMixer } from 'three';
 import { useFrame } from '@react-three/fiber';
@@ -9,7 +8,6 @@ function Model() {
   let mixer = null;
   const { scene, animations } = useGLTF(model, DRACOLoader);
   mixer = new AnimationMixer(scene);
-  console.log(animations);
   mixer.clipAction(animations[1]).play();
   useFrame((state, delta) => {
     mixer.update(delta);
