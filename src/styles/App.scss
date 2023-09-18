@@ -9,9 +9,21 @@
   overflow-x: hidden;
   overflow-y: hidden;
   overscroll-behavior: contain;
-
   display: flex;
   overflow-x: scroll;
   overflow-y: hidden;
   overscroll-behavior: contain;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.fade-in {
+  animation: fadeIn 1s ease-in-out; /* Adjust the duration and timing function as needed */
 }

@@ -1,14 +1,20 @@
-@import url("https://fonts.googleapis.com/css2?family=Geo:ital@1&family=Ultra&display=swap");
-
 html,
 body {
   font-size: 16px;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
-    Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+  font-family:
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    Segoe UI,
+    Roboto,
+    Helvetica,
+    Arial,
+    sans-serif,
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
     Segoe UI Symbol;
   margin: 0;
   padding: 0;
-  background-color: #192c59;
 }
 
 #root {

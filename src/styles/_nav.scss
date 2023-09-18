@@ -1,5 +1,5 @@
 .nav {
-  position: absolute;
+  position: fixed;
   z-index: 1;
   top: 0;
   left: 0;
@@ -20,7 +20,6 @@
 }
 
 .nav a {
-  font-family: "Geo", sans-serif;
   font-size: 24px;
   display: block;
   background-color: rgba(25, 44, 89, 0.4);
