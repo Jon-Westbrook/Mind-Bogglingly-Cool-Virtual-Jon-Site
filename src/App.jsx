@@ -10,7 +10,7 @@ import NavMenu from './NavMenu';
 import Model from './Model';
 
 import pages from './assets/content/pages.json';
-import envMap from './assets/img/environments/kloofendal_43d_clear_puresky_4k.hdr';
+import envMap from './assets/img/environments/kloofendal_48d_partly_cloudy_puresky_2k.hdr';
 
 function Pages(props) {
   const location = useLocation();
@@ -77,12 +77,10 @@ function App() {
               <Environment
                 files={envMap}
                 background
-                exposure={1}
-                blur={0}
               />
               <PresentationControls
                 enabled
-                global={false}
+                global={true}
                 cursor
                 snap
                 speed={3}
