@@ -50,6 +50,7 @@
     },
     "rules": {
       "no-console": 0,
+      "no-unused-vars": 0,
       "no-undef": 0,
       "no-alert": 1,
       "object-curly-newline": 0,
