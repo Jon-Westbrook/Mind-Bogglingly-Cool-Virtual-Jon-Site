@@ -5,11 +5,13 @@ import { PCFSoftShadowMap } from 'three';
 import { EffectComposer, Vignette } from '@react-three/postprocessing';
 import { Environment, PerspectiveCamera, PresentationControls } from '@react-three/drei';
 import Loader from './Loader';
-import NavMenu from './NavMenu';
+// Not working see below for comments
+// import NavMenu from './NavMenu';
 import Model from './Model';
 import pages from './assets/content/pages.json'; 
 import envMap from './assets/img/environments/kloofendal_43d_clear_puresky_4k.hdr';
 import './styles/App.scss';
+
 
 function Pages(props) {
 	const location = useLocation();
@@ -47,32 +49,38 @@ function App() {
 	const [currentPage, setCurrentPage] = useState('View1');
 	const [currentCamPosition, setCurrentCamPosition] = useState([0, 1.7, 2]);
 	const [currentCamTarget, setCurrentCamTarget] = useState([0, 1.55, 0]);
-	const [fadeNavMenu, setFadeNavMenu] = useState(false);
 	const canvasRef = useRef();
 
 	useEffect(() => {    
 		if (loaderUnmounted) {
 			canvasRef.current.classList = 'fade-in';
-			setFadeNavMenu(true);
 		}
 	}, [loaderUnmounted]);
 
 	useEffect(() => {
 		if (currentPage) {
-			const { camPosition, camTarget } = pages.find((page) => page.url === currentPage);
-			setCurrentCamPosition(camPosition);
-			setCurrentCamTarget(camTarget);
+			const page = pages.find((page) => page.url === currentPage);
+			if (page) {
+			// If a matching page is found, use its camPosition and camTarget
+				setCurrentCamPosition(page.camPosition);
+				setCurrentCamTarget(page.camTarget);
+			} else {
+			// If no matching page is found, provide default values or handle the case accordingly
+				setCurrentCamPosition([0, 1.7, 2]); // Default camPosition
+				setCurrentCamTarget([0, 1.55, 0]);   // Default camTarget
+			}
 		}
-	}, [ currentPage ]);
+	}, [currentPage]);
 
- 
+
 	return (
 		<>
 			<Router>
 				<Suspense fallback={<Loader onUnmount={() => setLoaderUnmounted(true)} />}> 
 					<div className="app">
 						<Pages setCurrentPage={setCurrentPage} />
-						<NavMenu pageList={pages} currentPage={currentPage} className={fadeNavMenu ? 'fade-in' : ''} />
+						{/* Not working. Getting FOUC and sticky on refresh.  */}
+						{/* <NavMenu pageList={pages} currentPage={currentPage}  /> */}
 						<Canvas shadows={{ type: PCFSoftShadowMap }} dpr={1} ref={canvasRef}>
 							<Camera
 								camPosition={currentCamPosition}

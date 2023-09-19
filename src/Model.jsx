@@ -24,7 +24,7 @@ export default function Model(props) {
 		<group ref={group} {...props} dispose={null}>
 			<group name="Scene">
 				<group name="Armature001">
-					<primitive object={nodes.Hips} />
+					<primitive object={scene} />
 					<skinnedMesh name="avaturn_body" geometry={nodes.avaturn_body.geometry} material={materials.avaturn_body_material} skeleton={nodes.avaturn_body.skeleton} />
 					<skinnedMesh name="avaturn_glasses" geometry={nodes.avaturn_glasses.geometry} material={materials.avaturn_glasses_0_material} skeleton={nodes.avaturn_glasses.skeleton} />
 					<skinnedMesh name="avaturn_glasses_glass" geometry={nodes.avaturn_glasses_glass.geometry} material={materials.avaturn_glasses_1_material} skeleton={nodes.avaturn_glasses_glass.skeleton} />
