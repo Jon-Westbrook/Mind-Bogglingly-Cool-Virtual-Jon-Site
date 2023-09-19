@@ -4,11 +4,12 @@
 @import "nav";
 
 .app {
-  position: relative;
-  height: 100vh;
-  overflow-x: hidden;
-  overflow-y: hidden;
-  overscroll-behavior: contain;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
   display: flex;
   overflow-x: scroll;
   overflow-y: hidden;
