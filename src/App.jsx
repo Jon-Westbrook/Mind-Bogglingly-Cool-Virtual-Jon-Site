@@ -6,7 +6,7 @@ import { EffectComposer, Vignette } from '@react-three/postprocessing';
 import { Environment, PerspectiveCamera, PresentationControls } from '@react-three/drei';
 import Loader from './Loader';
 // Not working see below for comments
-// import NavMenu from './NavMenu';
+import NavMenu from './NavMenu';
 import Model from './Model';
 import pages from './assets/content/pages.json'; 
 import envMap from './assets/img/environments/kloofendal_48d_partly_cloudy_puresky_2k.hdr';
@@ -80,23 +80,20 @@ function App() {
           <Pages setCurrentPage={setCurrentPage} />
           <div className="app">
             {/* Not working. Getting FOUC and sticky on refresh.  */}
-            {/* <NavMenu pageList={pages} currentPage={currentPage}  /> */}
+            <NavMenu pageList={pages} currentPage={currentPage}  />
             <Canvas shadows={{ type: PCFSoftShadowMap }} dpr={[1,2]} ref={canvasRef}>
               <Camera
                 camPosition={currentCamPosition}
                 camTarget={currentCamTarget}
               />
               <PresentationControls
-                enabled
-                global={true}
-                cursor={false}
-                snap={true}
+                global
+                cursor={true}
+                snap
                 speed={8}
                 zoom={1}
-                rotation={[0, 0, 0]}
-                polar={[0, 0.1]}
-                azimuth={[-Infinity, Infinity]}
-                config={{ mass: 1, tension: 170, friction: 26 }}
+                polar={[0, 0]}
+                azimuth={[-Math.PI / 2, Math.PI / 2]}
               ><Model />
               </PresentationControls>
               <Environment
