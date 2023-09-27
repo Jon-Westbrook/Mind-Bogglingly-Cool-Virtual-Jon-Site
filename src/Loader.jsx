@@ -7,7 +7,6 @@ function Loader({ onUnmount }) {
     if (Math.round(progress) === 100) {
       return () => {
         onUnmount && onUnmount();
-  
       };
     }
   }, [onUnmount, progress]);

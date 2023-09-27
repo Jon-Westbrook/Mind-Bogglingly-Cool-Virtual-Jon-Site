@@ -77,11 +77,11 @@ function App() {
     <>
       <Router>
         <Suspense fallback={<Loader onUnmount={() => setLoaderUnmounted(true)} />}> 
+          <Pages setCurrentPage={setCurrentPage} />
           <div className="app">
-            <Pages setCurrentPage={setCurrentPage} />
             {/* Not working. Getting FOUC and sticky on refresh.  */}
             {/* <NavMenu pageList={pages} currentPage={currentPage}  /> */}
-            <Canvas shadows={{ type: PCFSoftShadowMap }} dpr={1} ref={canvasRef}>
+            <Canvas shadows={{ type: PCFSoftShadowMap }} dpr={[1,2]} ref={canvasRef}>
               <Camera
                 camPosition={currentCamPosition}
                 camTarget={currentCamTarget}
@@ -91,8 +91,9 @@ function App() {
                 global={true}
                 cursor={false}
                 snap={true}
-                speed={6}
+                speed={8}
                 zoom={1}
+                rotation={[0, 0, 0]}
                 polar={[0, 0.1]}
                 azimuth={[-Infinity, Infinity]}
                 config={{ mass: 1, tension: 170, friction: 26 }}

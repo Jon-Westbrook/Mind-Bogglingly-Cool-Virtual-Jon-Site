@@ -14,6 +14,11 @@
   overflow-x: scroll;
   overflow-y: hidden;
   overscroll-behavior: contain;
+  touch-action: none;
+}
+
+.app:first-child div {
+  touch-action: none;
 }
 
 @keyframes fadeIn {
