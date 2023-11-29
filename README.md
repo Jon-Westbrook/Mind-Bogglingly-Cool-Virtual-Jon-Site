@@ -1,6 +1,5 @@
-# Mind-Bogglingly Cool Virtual Jon Site
-
-Creating a virtual Jon with the latest in React and ThreeJS technologies. 
+# React-Three/Fiber Experiments
+Creating a virtual 3D full screen model of myself. 
 
 ## Development
 
